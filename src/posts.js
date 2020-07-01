@@ -6,13 +6,13 @@ export const posts = _.chain(all)
   .orderBy('date', 'desc')
   .value()
 
-export function findPost(permalink) {
-  return _.find(posts, {permalink})
+export function findPost(slug) {
+  return _.find(posts, {slug})
 }
 
 function transform({filename, metadata, html}) {
-  const permalink = filename.replace(/.md$/, '')
+  const slug = filename.replace(/.md$/, '')
   const date = new Date(metadata.date)
 
-  return {...metadata, filename, permalink, html, date}
+  return {...metadata, filename, slug, html, date}
 }
