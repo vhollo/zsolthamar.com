@@ -1,10 +1,16 @@
 <script>
-	import Nav from "../components/Nav.svelte";
-	import Stylesheet from "../components/Stylesheet.svelte";
+	import Nav from "../components/Nav.svelte"
+	import Stylesheet from "../components/Stylesheet.svelte"
 
-	export let segment;
+	export let segment
 </script>
 
+<Nav {segment} />
+
+<main>
+	<slot />
+</main>
+<!-- 
 <style>
 	main {
 		position: relative;
@@ -15,11 +21,5 @@
 		box-sizing: border-box;
 	}
 </style>
-
+ -->
 <Stylesheet />
-
-<Nav {segment} />
-
-<main>
-	<slot />
-</main>

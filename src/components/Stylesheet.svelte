@@ -27,7 +27,7 @@
 		--gutterz: calc(var(--gutter) / 8);
 		--spacer: calc(4 * var(--gutter));
 	}
-	#sapper {
+	html {
 		--bgcolor: var(--darkgray);
 		--txtcolor: var(--light);
 		--txt25: var(--light25);
@@ -42,11 +42,37 @@
 
 	body {
 		position: relative;
+		background-color: var(--bgcolor);
+		color: var(--txtcolor);
 	}
+	/* body::after {
+    content: "";
+    position: absolute;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(120deg, #eaee44, #33d0ff);
+		opacity: .25;
+		mix-blend-mode: hard-light;
+	} */
+
 	html {
 		height: -webkit-fill-available;
 	}
+	#sapper {
+		max-width: 64em;
+		margin: 0 auto;
+	}
 
+	main {
+		padding: var(--gutter);
+	}
+	h1, h2, h3, h4, h5, h6 {
+		/* font-family: 'Kanit', sans-serif; */
+		font-family: 'Montserrat', sans-serif;
+	}
 	h1 {
 		font-size: 3rem;
 	}
@@ -64,4 +90,18 @@
 	h5 {
 		font-size: 1.5rem;
 	}
+
+	p {
+		margin: 0 0 .5rem;
+	}
+	
+	svg {
+		fill: var(--txtcolor);
+		margin: 0 auto;
+	}
+	svg text {
+		fill: var(--bgcolor);
+		margin: 0 auto;
+	}
+
 </style>

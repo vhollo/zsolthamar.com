@@ -1,17 +1,17 @@
 <script>
   import {posts} from '../../posts'
 </script>
-
+<!-- 
 <svelte:head>
   <title>Josh's Weblog</title>
 </svelte:head>
-
-<h1>Josh's Weblog</h1>
+ -->
+<h2>Zsolt's Weblog</h2>
 
 {#each posts as post}
   <article>
     <a href={`/blog/${post.slug}`}>
-      <h2>{post.title}</h2>
+      <h3>{post.title}</h3>
       <p>{post.summary}</p>
     </a>
   </article>

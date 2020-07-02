@@ -1,23 +1,24 @@
 <svelte:head>
 </svelte:head>
 
-<figure>
-	<img alt="Success Kid" src="14.jpg" />
-	<figcaption>Have fun with Sapper!</figcaption>
-</figure>
-
+<h2>Köszöntöm a honlapomon!</h2>
+	
 <p>
-	<strong>
-		Try editing this file (src/routes/index.svelte) to test live reloading.
-	</strong>
+	Ezen az oldalon azt a lenyűgöző varázslatot szeretném megosztani, ahogyan a zene egész életemet gazdaggá tette.</p>
+	<p>A szüleim gyakran emlegették, hogy egy-két évesen, mielőtt még értelmes szavakat mondtam volna, már Bach D-moll
+	zongoraversenyét tisztán dúdolgatva ringattam magam.</p>
+	<p>Még most is gyakran úgy érzem, hogy ha a szavak időnként cserben is hagynak, a zene mindig elégedettséggel és
+	boldogsággal tölt el.</p>
+	<p>Mióta nem csak komponálok, hanem karmesterként interpretálom is a zenét, örömöm teljes, mivel egyfajta közvetítőként
+	segíthetek a közönségemnek megtapasztalni a zene felemelő és gyógyító erejét.
 </p>
 
-<style>
+<figure>
+	<img alt="Success Kid" src="14.jpg" />
+	<figcaption></figcaption>
+</figure>
 
-	p {
-		text-align: center;
-		margin: 0 auto;
-	}
+<style>
 
 	figure {
 		margin: 0 0 1em 0;
