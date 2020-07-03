@@ -55,7 +55,7 @@
 		opacity: .25;
 		mix-blend-mode: hard-light;
 	}
- */	
+ */
 	header#home {
 		background-image: url(/1.jpg);
 		background-repeat: no-repeat;
