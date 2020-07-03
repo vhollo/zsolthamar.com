@@ -77,6 +77,7 @@
 		/* font-weight: 800; */
 		/* letter-spacing: var(--gutterx); */
 		/* text-shadow: 2px 2px 0px black; */
+		margin: 0 0 2rem 0;
 	}
 	header#home h1 {
 		position: absolute;
@@ -84,7 +85,7 @@
 		left: 0;
 		right: 0;
 		margin: 0;
-		margin-bottom: -.5em;
+		margin-bottom: -.75em;
 	}
 	h1 :global(svg) {
 		fill: transparent;
@@ -93,7 +94,7 @@
 	}
 
 	nav {
-		background-color: var(--bgcolor);
+		background-color: var(--toolbg);
 		/* border-bottom: 1px solid rgba(255, 62, 0, 0.1); */
 		font-weight: 300;
 		padding: 0 1em;

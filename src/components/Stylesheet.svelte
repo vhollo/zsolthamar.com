@@ -75,26 +75,36 @@
 	}
 	h1 {
 		font-size: 3rem;
+		margin: 2rem 0;
 	}
 	h2 {
 		font-size: 2.5rem;
+		margin: 1.75rem 0;
 	}
 	h3 {
 		font-size: 2rem;
+		margin: 1.5rem 0;
 	}
 
 	h4 {
 		font-size: 1.75rem;
+		margin: 1.25rem 0;
 	}
 
 	h5 {
 		font-size: 1.5rem;
+		margin: 1rem 0;
+	}
+
+	h6 {
+		font-size: 1.25rem;
+		margin: .75rem 0;
 	}
 
 	p {
-		margin: 0 0 .5rem;
+		margin: 0 0 .75rem;
 	}
-	
+
 	svg {
 		fill: var(--txtcolor);
 		margin: 0 auto;
