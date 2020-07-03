@@ -1,33 +1,35 @@
 <svelte:head>
 </svelte:head>
 
-<h2>Köszöntöm a honlapomon!</h2>
+<h2>Welcome to my website!</h2>
 	
 <p>
-	Ezen az oldalon azt a lenyűgöző varázslatot szeretném megosztani, ahogyan a zene egész életemet gazdaggá tette.</p>
-	<p>A szüleim gyakran emlegették, hogy egy-két évesen, mielőtt még értelmes szavakat mondtam volna, már Bach D-moll
-	zongoraversenyét tisztán dúdolgatva ringattam magam.</p>
-	<p>Még most is gyakran úgy érzem, hogy ha a szavak időnként cserben is hagynak, a zene mindig elégedettséggel és
-	boldogsággal tölt el.</p>
-	<p>Mióta nem csak komponálok, hanem karmesterként interpretálom is a zenét, örömöm teljes, mivel egyfajta közvetítőként
-	segíthetek a közönségemnek megtapasztalni a zene felemelő és gyógyító erejét.
+	It is not meant to tell about my life but to share the fascination what music has always brought to me.</p>
+<p>
+	My parents often mentioned that I was not yet able to utter sounds to form comprehensible words when I cradled myself by singing already quite clearly Bach D- minor piano concerto.
+</p>
+<p>
+	I still feel that while words may betray sounds of music always provide me with comfort and happiness.
+</p>
+<p>
+	Since I am not only composing music but also interpreting it as a conductor my pleasure is in full fruition- as a kind
+	of medium I can acquaint my audience with the music what "hallows and heals".
 </p>
 
 <figure>
-	<img alt="Success Kid" src="14.jpg" />
+	<img alt="Zsolt Hamar" src="14.jpg" />
 	<figcaption></figcaption>
 </figure>
 
 <style>
 
 	figure {
-		margin: 0 0 1em 0;
+		margin: 1em 0;
 	}
 
 	img {
 		width: 100%;
-		max-width: 400px;
-		margin: 0 auto 1em;
+		/* max-width: 400px; */
 	}
 
 </style>
