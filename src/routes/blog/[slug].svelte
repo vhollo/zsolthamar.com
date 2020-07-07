@@ -11,10 +11,10 @@
 </script>
 
 <svelte:head>
-  <title>{post.title}</title>
+  <title>{post.name.en}</title>
 </svelte:head>
 
-<h1>{post.title.en}<br>{post.title.de}<br>{post.title.hu}</h1>
+<h1>{post.name.en}<br>{post.name.de}<br>{post.name.hu}</h1>
 {#if post.thumbnail}
 <figure>
 	<img src="{post.thumbnail}" alt="{post.title}"/>
