@@ -14,7 +14,7 @@
   <title>{post.title}</title>
 </svelte:head>
 
-<h1>{post.title}</h1>
+<h1>{post.title.en}<br>{post.title.de}<br>{post.title.hu}</h1>
 {#if post.thumbnail}
 <figure>
 	<img src="{post.thumbnail}" alt="{post.title}"/>
