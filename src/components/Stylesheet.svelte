@@ -8,7 +8,7 @@
 		--green: #c0ff55;
 		--light: #e2e8f0;
 		--light25: #e2e8f03f;
-		--dark: #111;
+		--dark: #686868;
 		--dark25: #1111113f;
 		--darkgray: #0f2537;
 		--midtone: #1f4667;

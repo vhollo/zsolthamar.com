@@ -57,7 +57,7 @@
 	} */
 
 	header#home {
-		background-image: url(/palca.jpg);
+		background-image: url(/palca.png);
 		background-repeat: no-repeat;
 		background-size: cover;
 		/* padding-top: 50%; */
@@ -70,6 +70,7 @@
 
 	}
 	header :global(svg#wave2) {
+		width: 100%;
 		height: auto;
 		margin-bottom: -2%;
 		/* position: absolute;
