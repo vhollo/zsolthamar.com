@@ -15,5 +15,12 @@
 </svelte:head>
 
 <h1>{post.title}</h1>
-
+{#if post.thumbnail}
+<figure>
+	<img src="{post.thumbnail}" alt="{post.title}"/>
+	{#if post.caption}
+	<figcaption></figcaption>
+	{/if}
+</figure>
+{/if}
 {@html post.html}

@@ -1,5 +1,5 @@
 <script context="module">
-	import { Wave2, Wordmark } from "./svg/SVGs.svelte"
+	import { Wave1, Wave2, Wordmark } from "./svg/SVGs.svelte"
 </script>
 
 <script>
@@ -43,8 +43,9 @@
 <style>
 	header {
 		position: relative;
+		fill: var(--bgcolor);
 	}
-/* 	header::before {
+	/* header::before {
     content: "";
     position: absolute;
     top: 0;
@@ -52,52 +53,51 @@
     width: 100%;
     height: 100%;
     background-image: linear-gradient(120deg, #eaee44, #33d0ff);
-		opacity: .25;
-		mix-blend-mode: hard-light;
-	}
- */
+    mix-blend-mode: darken;
+	} */
+
 	header#home {
-		background-image: url(/1.jpg);
+		background-image: url(/palca.jpg);
 		background-repeat: no-repeat;
 		background-size: cover;
 		padding-top: 50%;
-    background-position-y: 70%;
-		margin-bottom: var(--spacer);
+    background-position: 50% 70%;
+		/* margin-bottom: var(--spacer); */
+		display: flex;
+		flex-direction: column;
+		height: 100vh;
+    justify-content: flex-end;
+
 	}
-	header :global(svg) {
-		position: absolute;
-		bottom: 0;
-		fill: var(--bgcolor);
+	header :global(svg#wave2) {
+		height: auto;
+		/* position: absolute;
+		bottom: 0; */
 	}
-	h1 {
-		/* position: absolute; */
-		/* color: var(--maincolor); */
-		/* text-align: center; */
-    /* text-transform: uppercase; */
-		/* font-weight: 800; */
-		/* letter-spacing: var(--gutterx); */
-		/* text-shadow: 2px 2px 0px black; */
+	/* h1 {
 		margin: 0 0 2rem 0;
-	}
-	header#home h1 {
+	} */
+	/* header#home h1 {
 		position: absolute;
 		bottom: 0;
 		left: 0;
 		right: 0;
 		margin: 0;
 		margin-bottom: -.75em;
-	}
-	h1 :global(svg) {
-		fill: transparent;
+	} */
+	h1 {
 		stroke: var(--txtcolor);
-		width: 100%;
+		fill: transparent;
+		background-color: var(--light);
+		padding: 0 0 var(--gutter2);
+		margin: 0;
 	}
-
 	nav {
 		background-color: var(--toolbg);
+		color: var(--tooltxt);
 		/* border-bottom: 1px solid rgba(255, 62, 0, 0.1); */
 		font-weight: 300;
-		padding: 0 1em;
+		/* padding: 0 1em; */
 		/* display: flex;
 		justify-content: space-between; */
 		position: sticky;
@@ -107,6 +107,8 @@
 	ul {
 		overflow-x: auto;
 		white-space: nowrap;
+		max-width: 64em;
+    margin: 0 auto;
 	}
 	li {
 		display: inline-block;
@@ -114,8 +116,6 @@
 	}
 
 	[aria-current] {
-		position: relative;
-		display: inline-block;
 	}
 
 	[aria-current]::after {
@@ -129,8 +129,10 @@
 	}
 
 	a {
+		position: relative;
+		display: inline-block;
 		text-decoration: none;
-		padding: var(--gutter) var(--gutterx);
+		padding: var(--gutter) var(--gutter);
 		/* display: block; */
 	}
 
