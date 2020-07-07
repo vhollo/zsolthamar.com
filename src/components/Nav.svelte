@@ -60,7 +60,7 @@
 		background-image: url(/palca.jpg);
 		background-repeat: no-repeat;
 		background-size: cover;
-		padding-top: 50%;
+		/* padding-top: 50%; */
     background-position: 50% 70%;
 		/* margin-bottom: var(--spacer); */
 		display: flex;
@@ -71,6 +71,7 @@
 	}
 	header :global(svg#wave2) {
 		height: auto;
+		margin-bottom: -2%;
 		/* position: absolute;
 		bottom: 0; */
 	}
@@ -89,7 +90,7 @@
 		stroke: var(--txtcolor);
 		fill: transparent;
 		background-color: var(--light);
-		padding: 0 0 var(--gutter2);
+		padding: 0 var(--gutter) var(--gutter);
 		margin: 0;
 	}
 	nav {
@@ -121,7 +122,7 @@
 	[aria-current]::after {
 		position: absolute;
 		content: "";
-		width: calc(100% - 1em);
+		width: calc(100% - var(--gutter2));
 		height: 2px;
 		background-color: var(--maincolor);
 		display: block;
@@ -132,7 +133,7 @@
 		position: relative;
 		display: inline-block;
 		text-decoration: none;
-		padding: var(--gutter) var(--gutter);
+		padding: var(--gutter);
 		/* display: block; */
 	}
 
