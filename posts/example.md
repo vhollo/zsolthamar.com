@@ -7,7 +7,6 @@ name:
   de: Hello World 1 deu
   hu: Hello World 1 hun
 ---
-
 - this
 - is
 - a list

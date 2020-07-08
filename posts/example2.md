@@ -1,5 +1,4 @@
 ---
-title: Hello World 2
 summary: This is another post
 name:
   en: Hello World 2 en
@@ -8,7 +7,6 @@ name:
 date: 2020-01-01
 thumbnail: /uploads/14.jpg
 ---
-
 - this
 - is
 - another list
