@@ -33,19 +33,25 @@
 		<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
 		     the blog data when we hover over the link or tap it on a touchscreen -->
 		<li>
-			<a rel="prefetch" aria-current="{segment === 'blog' ? 'page' : undefined}" href="blog">
-				blog
+			<a rel="prefetch" aria-current="{segment === 'news' ? 'page' : undefined}" href="news">
+				news
 			</a>
 		</li>
+	</ul>
+	<ul>
+		<li><label for="lang-en">en</label></li>
+		<li>/</li>
+		<li><label for="lang-de">de</label></li>
+		<li>/</li>
+		<li><label for="lang-hu">hu</label></li>
 	</ul>
 </nav>
 
 <style>
-	header {
+	/* header {
 		position: relative;
-		fill: var(--bgcolor);
 	}
-	/* header::before {
+	header::before {
     content: "";
     position: absolute;
     top: 0;
@@ -56,18 +62,19 @@
     mix-blend-mode: darken;
 	} */
 
+	header {
+		display: flex;
+		flex-direction: column;
+    justify-content: flex-end;
+	}
+
 	header#home {
+		fill: var(--bgcolor);
 		background-image: url(/palca.png);
 		background-repeat: no-repeat;
 		background-size: cover;
-		/* padding-top: 50%; */
     background-position: 50% 70%;
-		/* margin-bottom: var(--spacer); */
-		display: flex;
-		flex-direction: column;
 		height: 100vh;
-    justify-content: flex-end;
-
 	}
 	header :global(svg#wave2) {
 		width: 100%;
@@ -90,9 +97,12 @@
 	h1 {
 		stroke: var(--txtcolor);
 		fill: transparent;
+		margin: 0;
+		padding: var(--gutter);
+	}
+	header#home h1 {
 		background-color: var(--light);
 		padding: 0 var(--gutter) var(--gutter);
-		margin: 0;
 	}
 	nav {
 		background-color: var(--toolbg);
@@ -100,8 +110,8 @@
 		/* border-bottom: 1px solid rgba(255, 62, 0, 0.1); */
 		font-weight: 300;
 		/* padding: 0 1em; */
-		/* display: flex;
-		justify-content: space-between; */
+		display: flex;
+		justify-content: space-between;
 		position: sticky;
 		top: 0;
 	}
@@ -110,11 +120,26 @@
 		overflow-x: auto;
 		white-space: nowrap;
 		max-width: 64em;
-    margin: 0 auto;
+    /* margin-right: var(--gutter); */
 	}
 	li {
 		display: inline-block;
 		vertical-align: middle;
+	}
+
+	li a {
+		padding: var(--gutter);
+	}
+	li label {
+		padding: var(--gutter) 0;
+	}
+	li:last-child label {
+		padding-right: var(--gutter);
+	}
+	li a, li label {
+		position: relative;
+		display: inline-block;
+		text-decoration: none;
 	}
 
 	[aria-current] {
@@ -129,13 +154,8 @@
 		display: block;
 		bottom: 0;
 	}
-
-	a {
-		position: relative;
-		display: inline-block;
-		text-decoration: none;
-		padding: var(--gutter);
-		/* display: block; */
-	}
+	:global(#lang-en:checked ~ #sapper) [for='lang-en'] { color: var(--maincolor); }
+	:global(#lang-de:checked ~ #sapper) [for='lang-de'] { color: var(--maincolor); }
+	:global(#lang-hu:checked ~ #sapper) [for='lang-hu'] { color: var(--maincolor); }
 
 </style>

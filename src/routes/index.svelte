@@ -23,13 +23,4 @@
 
 <style>
 
-	figure {
-		margin: var(--gutter2) 0 0;
-	}
-
-	img {
-		width: 100%;
-		/* max-width: 400px; */
-	}
-
 </style>

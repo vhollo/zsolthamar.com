@@ -31,6 +31,9 @@
 		%sapper.head%
 	</head>
 	<body>
+		<input hidden type="radio" name="lang" id="lang-en" value="en" checked aria-checked="true">
+		<input hidden type="radio" name="lang" id="lang-de" value="de">
+		<input hidden type="radio" name="lang" id="lang-hu" value="hu">
 		<!-- The application will be rendered inside this element,
 	     because `src/client.js` references it -->
 		<div id="sapper">%sapper.html%</div>

@@ -1,5 +1,5 @@
 <script>
-  import {posts} from '../../posts'
+  import {posts} from '../../news'
 </script>
 <!-- 
 <svelte:head>
@@ -10,8 +10,8 @@
 
 {#each posts as post}
   <article>
-    <a href={`/blog/${post.slug}`}>
-      <h3>{post.name.en}</h3>
+    <a href={`/news/${post.slug}`}>
+      <h3>{post.title.en}</h3>
       <p>{post.summary}</p>
     </a>
   </article>

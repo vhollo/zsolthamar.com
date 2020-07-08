@@ -50,14 +50,17 @@
 		color: var(--txtcolor);
 	}
 
-	#sapper {
-	}
+	body > input { display: none; }
+	#lang-en:not(:checked) ~ #sapper [lang='en'] { display: none; }
+	#lang-de:not(:checked) ~ #sapper [lang='de'] { display: none; }
+	#lang-hu:not(:checked) ~ #sapper [lang='hu'] { display: none; }
 
 	main {
 		max-width: 64em;
 		margin: 0 auto;
 		padding: var(--gutter);
 	}
+
 	/* h1, h2, h3, h4, h5, h6 {
 		font-family: system-ui, sans-serif;
 	} */
@@ -104,4 +107,10 @@
 		margin: 0 auto;
 	}
 
+	figure {
+		margin: var(--gutter2) 0 0;
+	}
+	img {
+		width: 100%;
+	}
 </style>

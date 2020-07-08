@@ -26,18 +26,29 @@ collections:
         - {label: "Title En", name: "en", widget: "string"}
         - {label: "Title De", name: "de", widget: "string"}
         - {label: "Title Hu", name: "hu", widget: "string"}
-      - {label: "Event Date", name: "date", widget: "datetime", default: "", format: "YYYY-MM-DD HH-mm", dateFormat: "YYYY-MM-DD", timeFormat: "HH:mm" }
-      - {label: "Featured Image", name: "thumbnail", widget: "image"}
-      - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Publish Date", name: "pub_date", widget: "datetime", format: "YYYY-MM-DD HH-mm", dateFormat: "YYYY-MM-DD", timeFormat: "HH:mm" }
+      - {label: "Event Date", name: "date", widget: "datetime", default: "", format: "YYYY-MM-DD HH:mm", dateFormat: "YYYY-MM-DD", timeFormat: "HH:mm" }
+      - label: "Featured Image"
+        name: "image"
+        widget: "object"
+        fields:
+        - {label: "Image", name: "src", widget: "image"}
+        - {label: "Caption", name: "caption", widget: "string"}
+      - label: "Content"
+        name: "content"
+        widget: "object"
+        fields:
+        - {label: "Content En", name: "en", widget: "markdown"}
+        - {label: "Content De", name: "de", widget: "markdown"}
+        - {label: "Content Hu", name: "hu", widget: "markdown"}
+      - {label: "Publish Date", name: "pub_date", widget: "datetime", format: "YYYY-MM-DD HH:mm", dateFormat: "YYYY-MM-DD", timeFormat: "HH:mm" }
 
   - label: "Pages"
     name: "pages"
     files:
 
-      - label: "About Page"
-        name: "about"
-        file: "site/pages/about.yml"
+      - label: "Landing Page"
+        name: "landing"
+        file: "site/pages/landing.md"
         fields:
           - label: "Title"
             name: "title"
@@ -46,30 +57,55 @@ collections:
             - {label: "Title En", name: "en", widget: "string"}
             - {label: "Title De", name: "de", widget: "string"}
             - {label: "Title Hu", name: "hu", widget: "string"}
-          - label: "Intro"
+          - label: "Content"
+            name: "content"
+            widget: "object"
+            fields:
+            - {label: "Content En", name: "en", widget: "markdown"}
+            - {label: "Content De", name: "de", widget: "markdown"}
+            - {label: "Content Hu", name: "hu", widget: "markdown"}
+          - {label: "Body", name: "body", widget: "code", default_language: "svelte"}
+
+      - label: "About Page"
+        name: "about"
+        file: "site/pages/about.md"
+        fields:
+          - label: "Introduction"
             name: "intro"
             widget: "object"
             fields:
             - {label: "Intro En", name: "en", widget: "markdown"}
             - {label: "Intro De", name: "de", widget: "markdown"}
             - {label: "Intro Hu", name: "hu", widget: "markdown"}
-          - label: Team
-            name: team
+          - label: CV
+            name: cv
             widget: list
             fields:
-              - {label: Name, name: name, widget: string}
+              - {label: "Date", name: "date", widget: "datetime", default: "", format: "YYYY", dateFormat: "YYYY", timeFormat: false }
               - {label: Position, name: position, widget: string}
-              - {label: Photo, name: photo, widget: image}
+              - {label: Location, name: location, widget: string}
+              - label: "Image"
+                name: "image"
+                widget: "object"
+                fields:
+                - {label: "Image", name: "src", widget: "image"}
+                - label: "Caption"
+                  name: "caption"
+                  widget: "object"
+                  fields:
+                  - {label: "Caption En", name: "en", widget: "string"}
+                  - {label: "Caption De", name: "de", widget: "string"}
+                  - {label: "Caption Hu", name: "hu", widget: "string"}
 
-      - label: "Locations Page"
-        name: "locations"
-        file: "site/pages/locations.yml"
+      - label: "Photos"
+        name: "photos"
+        file: "site/pages/photos.md"
         fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Intro, name: intro, widget: markdown}
-          - label: Locations
-            name: locations
+          - label: Photos
+            name: photos
             widget: list
             fields:
-              - {label: Name, name: name, widget: string}
-              - {label: Address, name: address, widget: string}
+              - {label: Photo, name: photo, widget: image}
+              - {label: Caption, name: caption, widget: string}
+              - {label: Location, name: location, widget: string}
+              - {label: "Date", name: "date", widget: "datetime", default: "", format: "YYYY", dateFormat: "YYYY", timeFormat: false }
