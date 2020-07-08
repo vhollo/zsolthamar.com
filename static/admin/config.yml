@@ -26,10 +26,10 @@ collections:
         - {label: "Title En", name: "en", widget: "string"}
         - {label: "Title De", name: "de", widget: "string"}
         - {label: "Title Hu", name: "hu", widget: "string"}
-      - {label: "Event Date", name: "date", widget: "datetime", default: "", format: "YYYY-MM-DD-hh-mm", dateFormat: "YYYY-MM-DD", timeFormat: "hh:mm" }
+      - {label: "Event Date", name: "date", widget: "datetime", default: "", format: "YYYY-MM-DD-HH-mm", dateFormat: "YYYY-MM-DD", timeFormat: "HH:mm" }
       - {label: "Featured Image", name: "thumbnail", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Publish Date", name: "pub_date", widget: "datetime", format: "YYYY-MM-DD-hh-mm", dateFormat: "YYYY-MM-DD", timeFormat: "hh:mm" }
+      - {label: "Publish Date", name: "pub_date", widget: "datetime", format: "YYYY-MM-DD-HH-mm", dateFormat: "YYYY-MM-DD", timeFormat: "HH:mm" }
 
   - label: "Pages"
     name: "pages"
