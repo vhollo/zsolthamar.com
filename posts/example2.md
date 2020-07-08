@@ -1,6 +1,6 @@
 ---
 summary: This is another post
-name:
+title:
   en: Hello World 2 en
   de: Hello World 2 de
   hu: Hello World 2 hu

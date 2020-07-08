@@ -16,10 +16,10 @@ collections:
     folder: "posts" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    identifier_field: name.en
+    identifier_field: title.en
     fields: # The fields for each document, usually in front matter
       - label: "Title"
-        name: "name"
+        name: "title"
         widget: "object"
         fields: 
         - {label: "En", name: "en", widget: "string"}
@@ -39,16 +39,16 @@ collections:
             name: "title"
             widget: "object"
             fields: 
-            - {label: "En", name: "en", widget: "string"}
-            - {label: "De", name: "de", widget: "string"}
-            - {label: "Hu", name: "hu", widget: "string"}
+            - {label: "Title En", name: "en", widget: "string"}
+            - {label: "Title De", name: "de", widget: "string"}
+            - {label: "Title Hu", name: "hu", widget: "string"}
           - label: "Intro"
             name: "intro"
             widget: "object"
             fields:
-            - {label: "En", name: "en", widget: "markdown"}
-            - {label: "De", name: "de", widget: "markdown"}
-            - {label: "Hu", name: "hu", widget: "markdown"}
+            - {label: "Intro En", name: "en", widget: "markdown"}
+            - {label: "Intro De", name: "de", widget: "markdown"}
+            - {label: "Intro Hu", name: "hu", widget: "markdown"}
           - label: Team
             name: team
             widget: list
