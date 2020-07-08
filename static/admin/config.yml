@@ -11,9 +11,10 @@ slug:
   sanitize_replacement: "-"
 
 collections:
-  - name: "blog" # Used in routes, e.g., /admin/collections/blog
-    label: "Blog" # Used in the UI
-    folder: "posts" # The path to the folder where the documents are stored
+
+  - name: "news" # Used in routes, e.g., /admin/collections/blog
+    label: "News" # Used in the UI
+    folder: "site/news" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     identifier_field: title.en
@@ -22,18 +23,21 @@ collections:
         name: "title"
         widget: "object"
         fields: 
-        - {label: "En", name: "en", widget: "string"}
-        - {label: "De", name: "de", widget: "string"}
-        - {label: "Hu", name: "hu", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "date", format: "YYYY-MM-DD", dateFormat: "YYYY-MM-DD" }
+        - {label: "Title En", name: "en", widget: "string"}
+        - {label: "Title De", name: "de", widget: "string"}
+        - {label: "Title Hu", name: "hu", widget: "string"}
+      - {label: "Event Date", name: "date", widget: "datetime", default: "", format: "YYYY-MM-DD", dateFormat: "YYYY-MM-DD", timeFormat: true }
       - {label: "Featured Image", name: "thumbnail", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Publish Date", name: "pub_date", widget: "datetime", format: "YYYY-MM-DD", dateFormat: "YYYY-MM-DD", timeFormat: true }
+
   - label: "Pages"
     name: "pages"
     files:
+
       - label: "About Page"
         name: "about"
-        file: "site/content/about.yml"
+        file: "site/pages/about.yml"
         fields:
           - label: "Title"
             name: "title"
@@ -56,9 +60,10 @@ collections:
               - {label: Name, name: name, widget: string}
               - {label: Position, name: position, widget: string}
               - {label: Photo, name: photo, widget: image}
+
       - label: "Locations Page"
         name: "locations"
-        file: "site/content/locations.yml"
+        file: "site/pages/locations.yml"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Intro, name: intro, widget: markdown}
