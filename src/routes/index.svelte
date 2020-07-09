@@ -13,6 +13,10 @@
 	<title>{post.slug}</title>
 </svelte:head> -->
 
+<div lang="en">{@html post.content.en}</div>
+<div lang="de">{@html post.content.de}</div>
+<div lang="hu">{@html post.content.hu}</div>
+
 {#if post.image}
 <figure>
 	<img src="{post.image.src}" alt="{post.title}"/>
@@ -21,10 +25,6 @@
 	{/if}
 </figure>
 {/if}
-
-<div lang="en">{@html post.content.en}</div>
-<div lang="de">{@html post.content.de}</div>
-<div lang="hu">{@html post.content.hu}</div>
 
 <style>
 

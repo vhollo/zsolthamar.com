@@ -18,33 +18,35 @@
 {/if}
 
 <nav>
-	<ul>
-		<li>
-			<a aria-current="{segment === undefined ? 'page' : undefined}" href=".">
-				home
-			</a>
-		</li>
-		<li>
-			<a aria-current="{segment === 'about' ? 'page' : undefined}" href="about">
-				about
-			</a>
-		</li>
+	<div>
+		<ul>
+			<li>
+				<a aria-current="{segment === undefined ? 'page' : undefined}" href=".">
+					home
+				</a>
+			</li>
+			<li>
+				<a aria-current="{segment === 'about' ? 'page' : undefined}" href="about">
+					about
+				</a>
+			</li>
 
-		<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
-		     the blog data when we hover over the link or tap it on a touchscreen -->
-		<li>
-			<a rel="prefetch" aria-current="{segment === 'news' ? 'page' : undefined}" href="news">
-				news
-			</a>
-		</li>
-	</ul>
-	<ul>
-		<li><label for="lang-en">en</label></li>
-		<li>/</li>
-		<li><label for="lang-de">de</label></li>
-		<li>/</li>
-		<li><label for="lang-hu">hu</label></li>
-	</ul>
+			<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
+					the blog data when we hover over the link or tap it on a touchscreen -->
+			<li>
+				<a rel="prefetch" aria-current="{segment === 'news' ? 'page' : undefined}" href="news">
+					news
+				</a>
+			</li>
+		</ul>
+		<ul>
+			<li><label for="lang-en">en</label></li>
+			<li>/</li>
+			<li><label for="lang-de">de</label></li>
+			<li>/</li>
+			<li><label for="lang-hu">hu</label></li>
+		</ul>
+	</div>
 </nav>
 
 <style>
@@ -110,10 +112,14 @@
 		/* border-bottom: 1px solid rgba(255, 62, 0, 0.1); */
 		font-weight: 300;
 		/* padding: 0 1em; */
-		display: flex;
-		justify-content: space-between;
 		position: sticky;
 		top: 0;
+	}
+	nav div {
+		max-width: 64em;
+    margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
 	}
 
 	ul {

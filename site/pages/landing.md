@@ -3,6 +3,12 @@ title:
   en: Welcome
   de: Willkommen
   hu: Köszöntő
+image:
+  src: /uploads/14.jpg
+  caption:
+    en: Zsolt Hamar (year)
+    de: Zsolt Hamar (Jahre)
+    hu: Hamar Zsolt (évszám)
 content:
   en: >-
     > *<q>Only the song through the land hallows and heals.</q>*
