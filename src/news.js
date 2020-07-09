@@ -13,6 +13,6 @@ export function findPost(slug) {
 function transform({filename, metadata, html}) {
   const slug = filename.replace(/.md$/, '')
   const date = new Date(metadata.date)
-
+console.log(metadata)
   return {...metadata, filename, slug, html, date}
 }
