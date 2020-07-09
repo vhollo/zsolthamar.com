@@ -7,6 +7,7 @@ import commonjs from "@rollup/plugin-commonjs"
 import svelte from "rollup-plugin-svelte"
 import babel from "@rollup/plugin-babel"
 import { terser } from "rollup-plugin-terser"
+import yaml from '@rollup/plugin-yaml'
 import getPreprocessor from "svelte-preprocess"
 import config from "sapper/config/rollup.js"
 import path from 'path'
@@ -35,6 +36,7 @@ export default {
 		plugins: [
 			glob(),
 			markdown(),
+			yaml(),
 			alias({ entries: aliases }),
 			replace({
 				"process.browser": true,
@@ -92,6 +94,7 @@ export default {
 		plugins: [
 			glob(),
 			markdown(),
+			yaml(),
 			alias({ entries: aliases }),
 			replace({
 				"process.browser": false,

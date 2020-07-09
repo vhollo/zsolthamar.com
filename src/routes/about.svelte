@@ -1,18 +1,18 @@
 <script context="module">
-	import { findPost } from '../pages'
+	import { findPost } from '../about'
 
-	export function preload(page) {
-		return { post: findPost(page.params.slug) }
+	export function preload() {
+		return { post: findPost('about') }
 	}
 </script>
 <script>
 	export let post
 </script>
-<!-- 
-<svelte:head>
-	<title>About</title>
-</svelte:head>
- -->
+
+<!-- <svelte:head>
+	<title>{post.slug}</title>
+</svelte:head> -->
+
 {#if post.image}
 <figure>
 	<img src="{post.image.src}" alt="{post.image.caption}"/>
@@ -21,4 +21,4 @@
 	{/if}
 </figure>
 {/if}
-{@html post.html}
+<div lang="en">{post.intro.en}</div><div lang="de">{post.intro.de}</div><div lang="hu">{post.intro.hu}</div>

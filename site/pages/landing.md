@@ -5,11 +5,11 @@ title:
   hu: Köszöntő
 content:
   en: >-
-    > *"Only the song through the land hallows and heals."*
+    > *<q>Only the song through the land hallows and heals.</q>*
 
     >
 
-    > Rainer Maria Rilke: Sonnets To Orpheus – The XIXth Sonnet
+    > – Rainer Maria Rilke: Sonnets To Orpheus – The XIXth Sonnet
 
 
     # Welcome to my website!
@@ -27,17 +27,16 @@ content:
     Since I am not only composing music but also interpreting it as a conductor, my pleasure is in full fruition – as a kind of medium I can acquaint my audience with the music what "hallows and heals".
 
 
-    With kind regards\
+    With kind regards
 
-    \
 
     *Zsolt Hamar*
   hu: >-
-    > ”Vannak a léleknek régiói, melyekbe csak a zene világít be.”
+    > *<q>Vannak a léleknek régiói, melyekbe csak a zene világít be.</q>*
 
     >
 
-    > Kodály Zoltán
+    > – Kodály Zoltán
 
 
     # Köszöntöm a honlapomon!
@@ -60,11 +59,11 @@ content:
 
     *Hamar Zsolt*
   de: >-
-    > *„Einzig das Lied überm Land heiligt und feiert.“*
+    > *<q>Einzig das Lied überm Land heiligt und feiert.</q>*
 
     >
 
-    > Erich Maria Rilke: Sonette an Orpheus – Das XIX. Sonett
+    > – Erich Maria Rilke: Sonette an Orpheus – Das XIX. Sonett
 
 
     # Ich begrüße Sie auf meiner Homepage!
@@ -87,3 +86,4 @@ content:
 
     *Zsolt Hamar*
 ---
+<div lang="en">${post.content.en}</div><div lang="de">{post.content.de}</div><div lang="hu">{post.content.hu}</div>

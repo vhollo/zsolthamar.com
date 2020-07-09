@@ -11,8 +11,8 @@
 {#each posts as post}
   <article>
     <a href={`/news/${post.slug}`}>
-      <h3>{post.title.en}</h3>
-      <p>{post.summary}</p>
+      <h3><span lang="en">{post.title.en}</span><span lang="de">{post.title.de}</span><span lang="hu">{post.title.hu}</span></h3>
+      <p><span lang="en">{post.summary.en}</span><span lang="de">{post.summary.de}</span><span lang="hu">{post.summary.hu}</span></p>
     </a>
   </article>
 {/each}

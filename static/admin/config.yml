@@ -32,7 +32,13 @@ collections:
         widget: "object"
         fields:
         - {label: "Image", name: "src", widget: "image"}
-        - {label: "Caption", name: "caption", widget: "string"}
+        - label: "Caption"
+          name: "caption"
+          widget: "object"
+          fields:
+          - {label: "Caption En", name: "en", widget: "string"}
+          - {label: "Caption De", name: "de", widget: "string"}
+          - {label: "Caption Hu", name: "hu", widget: "string"}
       - label: "Content"
         name: "content"
         widget: "object"
@@ -71,12 +77,12 @@ collections:
         file: "site/pages/about.md"
         fields:
           - label: "Introduction"
-            name: "intro"
+            name: "content"
             widget: "object"
             fields:
-            - {label: "Intro En", name: "en", widget: "markdown"}
-            - {label: "Intro De", name: "de", widget: "markdown"}
-            - {label: "Intro Hu", name: "hu", widget: "markdown"}
+            - {label: "Introduction En", name: "en", widget: "markdown"}
+            - {label: "Introduction De", name: "de", widget: "markdown"}
+            - {label: "Introduction Hu", name: "hu", widget: "markdown"}
           - label: CV
             name: cv
             widget: list

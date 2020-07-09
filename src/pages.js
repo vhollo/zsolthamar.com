@@ -3,10 +3,11 @@ import all from '../site/pages/*.md'
 
 export const posts = _.chain(all)
   .map(transform)
-  .orderBy('date', 'desc')
+  //.orderBy('date', 'desc')
   .value()
 
 export function findPost(slug) {
+	console.log(all)
   return _.find(posts, {slug})
 }
 

@@ -4,9 +4,9 @@ title:
   en: Hello World 1 eng
   de: Hello World 1 deu
   hu: Hello World 1 hun
-date: 2020-07-08 13-29
-thumbnail: /uploads/4.jpg
-pub_date: 2020-07-08 13-29
+date: 2020-07-08 13:29
+image: /uploads/4.jpg
+pub_date: 2020-07-08 13:29
 ---
 - this
 - is

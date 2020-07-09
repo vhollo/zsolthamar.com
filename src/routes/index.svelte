@@ -1,25 +1,30 @@
-<svelte:head>
-</svelte:head>
+<script context="module">
+	import { findPost } from '../index'
 
-<h2>Welcome to my website!</h2>
-	
-<p>
-	It is not meant to tell about my life but to share the fascination what music has always brought to me.</p>
-<p>
-	My parents often mentioned that I was not yet able to utter sounds to form comprehensible words when I cradled myself by singing already quite clearly Bach D-minor piano concerto.
-</p>
-<p>
-	I still feel that while words may betray, sounds of music always provide me with comfort and happiness.
-</p>
-<p>
-	Since I am not only composing music but also interpreting it as a conductor, my pleasure is in full fruition – as a kind
-	of medium I can acquaint my audience with the music what "hallows and heals".
-</p>
+	export function preload() {
+		return { post: findPost('landing') }
+	}
+</script>
+<script>
+	export let post
+</script>
 
+<!-- <svelte:head>
+	<title>{post.slug}</title>
+</svelte:head> -->
+
+{#if post.image}
 <figure>
-	<img alt="Zsolt Hamar" src="14.jpg" />
-	<figcaption></figcaption>
+	<img src="{post.image.src}" alt="{post.title}"/>
+	{#if post.image.caption}
+	<figcaption><span lang="en">{post.image.caption.en}</span><span lang="de">{post.image.caption.de}</span><span lang="hu">{post.image.caption.hu}</span></figcaption>
+	{/if}
 </figure>
+{/if}
+
+<div lang="en">{@html post.content.en}</div>
+<div lang="de">{@html post.content.de}</div>
+<div lang="hu">{@html post.content.hu}</div>
 
 <style>
 
