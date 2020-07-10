@@ -4,16 +4,20 @@ summary:
   de: This is a post deu
   hu: This is a post hun
 title:
-  en: Hello World 1 eng
-  de: Hello World 1 deu
-  hu: Hello World 1 hun
-date: 2020-09-08 20:00
+  en: Event 1
+  de: Veranstaltung
+  hu: Esemény
+date: 2020-08-07 00:00
 image:
   src: /uploads/4.jpg
   caption:
-    en: Hello World 1 eng
-    de: Hello World 1 deu
-    hu: Hello World 1 hun
+    en: Myrna's Birthday
+    de: Myrna geburtstag
+    hu: Myrna szülinapja
+content:
+  en: BMW 330 cabrio
+  de: BMW 330 cabrio
+  hu: BMW 330 cabrio
 pub_date: 2020-07-08 13:29
 ---
 - this
