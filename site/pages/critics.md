@@ -40,4 +40,11 @@ critic:
         Zsolt Hamar and pianist Jeno Jando.
     title: Calgary Herald
     src: /uploads/review_calagary_oct_1_2006.pdf
+  - date: 2010-02-18
+    critic:
+      en: Wunschkonzert am Faschingsdienstag
+      de: Wunschkonzert am Faschingsdienstag
+      hu: Wunschkonzert am Faschingsdienstag
+    title: Oberösterreichische Nachrichten
+    src: /uploads/rev_hamar_linz_ooen_2010_02_18.pdf
 ---
