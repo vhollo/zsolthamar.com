@@ -15,9 +15,9 @@ image:
     de: Myrna Geburtstag
     hu: Myrna szülinapja
 content:
-  en: BMW 330 cabrio
-  de: BMW 330 cabrio
-  hu: BMW 330 cabrio
+  en: BMW 330i cabrio
+  de: BMW 330i cabrio
+  hu: BMW 330i cabrio
 pub_date: 2020-07-08 13:29
 ---
 - this
