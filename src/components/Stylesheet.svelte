@@ -58,7 +58,7 @@
 	main {
 		max-width: 64em;
 		margin: 0 auto;
-		padding: var(--gutter);
+		padding: var(--spacer) var(--gutter) var(--gutter);
 	}
 
 	/* h1, h2, h3, h4, h5, h6 {
@@ -113,4 +113,13 @@
 	img {
 		width: 100%;
 	}
+
+	blockquote {
+		display: block;
+		margin-left: auto;
+		width: fit-content;
+		padding-left: var(--gutter);
+		border-left: 4px solid var(--maincolor);
+	}
+
 </style>

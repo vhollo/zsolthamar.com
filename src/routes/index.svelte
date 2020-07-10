@@ -21,11 +21,14 @@
 <figure>
 	<img src="{post.image.src}" alt="{post.title}"/>
 	{#if post.image.caption}
-	<figcaption><span lang="en">{post.image.caption.en}</span><span lang="de">{post.image.caption.de}</span><span lang="hu">{post.image.caption.hu}</span></figcaption>
+	<figcaption><em><span lang="en">{post.image.caption.en}</span><span lang="de">{post.image.caption.de}</span><span lang="hu">{post.image.caption.hu}</span></em></figcaption>
 	{/if}
 </figure>
 {/if}
 
 <style>
+	figcaption {
+		text-align: right;
 
+	}
 </style>

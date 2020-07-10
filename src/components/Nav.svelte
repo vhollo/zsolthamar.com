@@ -72,7 +72,7 @@
 
 	header#home {
 		fill: var(--bgcolor);
-		background-image: url(/palca.png);
+		background-image: url(/palca.jpg);
 		background-repeat: no-repeat;
 		background-size: cover;
     background-position: 50% 70%;
@@ -146,6 +146,7 @@
 		position: relative;
 		display: inline-block;
 		text-decoration: none;
+		font-weight: bolder;
 	}
 
 	[aria-current] {

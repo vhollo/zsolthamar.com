@@ -7,7 +7,6 @@ export const posts = _.chain(all)
   .value()
 
 export function findPost(slug) {
-	console.log(all)
   return _.find(posts, {slug})
 }
 
