@@ -161,7 +161,7 @@ collections:
       - label: "Critics"
         name: "critics"
         file: "site/pages/critics.md"
-        identifier_field: critic.en
+        identifier_field: critic.title.en
         fields:
           - label: "Critics"
             label_singular: "Critic"
