@@ -12,7 +12,7 @@ image:
   src: /uploads/4.jpg
   caption:
     en: Myrna's Birthday
-    de: Myrna geburtstag
+    de: Myrna Geburtstag
     hu: Myrna szülinapja
 content:
   en: BMW 330 cabrio
