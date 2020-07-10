@@ -1,5 +1,5 @@
 <script context="module">
-	import { Wave1, Wave2, Wordmark } from "./svg/SVGs.svelte"
+	import { Wave2, Wordmark } from "./svg/SVGs.svelte"
 </script>
 
 <script>
@@ -22,20 +22,25 @@
 		<ul>
 			<li>
 				<a aria-current="{segment === undefined ? 'page' : undefined}" href=".">
-					home
+					index
 				</a>
 			</li>
 			<li>
 				<a aria-current="{segment === 'about' ? 'page' : undefined}" href="about">
-					about
+					<span lang="en">about</span><span lang="de">einführung</span><span lang="hu">bemutatkozás</span>
+				</a>
+			</li>
+			<li>
+				<a aria-current="{segment === 'career' ? 'page' : undefined}" href="career">
+					<span lang="en">career</span><span lang="de">werdegang</span><span lang="hu">pályafutás</span>
 				</a>
 			</li>
 
-			<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
+			<!-- for the news link, we're using rel=prefetch so that Sapper prefetches
 					the blog data when we hover over the link or tap it on a touchscreen -->
 			<li>
 				<a rel="prefetch" aria-current="{segment === 'news' ? 'page' : undefined}" href="news">
-					news
+					<span lang="en">news</span><span lang="de">nachrichten</span><span lang="hu">hírek</span>
 				</a>
 			</li>
 		</ul>

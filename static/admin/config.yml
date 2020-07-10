@@ -103,6 +103,38 @@ collections:
                   - {label: "Caption De", name: "de", widget: "string"}
                   - {label: "Caption Hu", name: "hu", widget: "string"}
 
+
+      - label: "Career Page"
+        name: "career"
+        file: "site/pages/career.md"
+        fields:
+          - label: "Introduction"
+            name: "content"
+            widget: "object"
+            fields:
+            - {label: "Introduction En", name: "en", widget: "markdown"}
+            - {label: "Introduction De", name: "de", widget: "markdown"}
+            - {label: "Introduction Hu", name: "hu", widget: "markdown"}
+          - label: CV
+            name: cv
+            widget: list
+            fields:
+              - {label: "Date", name: "date", widget: "datetime", default: "", format: "YYYY", dateFormat: "YYYY", timeFormat: false }
+              - {label: Position, name: position, widget: string}
+              - {label: Location, name: location, widget: string}
+              - label: "Image"
+                name: "image"
+                widget: "object"
+                fields:
+                - {label: "Image", name: "src", widget: "image"}
+                - label: "Caption"
+                  name: "caption"
+                  widget: "object"
+                  fields:
+                  - {label: "Caption En", name: "en", widget: "string"}
+                  - {label: "Caption De", name: "de", widget: "string"}
+                  - {label: "Caption Hu", name: "hu", widget: "string"}
+
       - label: "Photos"
         name: "photos"
         file: "site/pages/photos.md"
