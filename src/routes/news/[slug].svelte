@@ -24,7 +24,10 @@
 	{/if}
 </figure>
 {/if}
-{@html post.html}
+
+<div lang="en">{@html post.content.en}</div>
+<div lang="de">{@html post.content.de}</div>
+<div lang="hu">{@html post.content.hu}</div>
 
 <style>
 	date {
