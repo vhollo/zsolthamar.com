@@ -1,6 +1,9 @@
 import _ from 'lodash'
 import all from '../site/news/*.md'
-let eventdate
+import showdown from 'showdown'
+const converter = new showdown.Converter({
+	metadata: false,
+})
 
 export const posts = _.chain(all)
   .map(transform)
@@ -20,5 +23,10 @@ function transform({filename, metadata, html}) {
 		"de": metadata.date ? new Date(metadata.date).toLocaleString('de-DE', { year: "numeric", month: "short", day: "numeric" }) : '',
 		"hu": metadata.date ? new Date(metadata.date).toLocaleString('hu-HU', { year: "numeric", month: "short", day: "numeric" }) : ''
 	}
-	return { ...metadata, filename, slug, eventdate, html, sort }
+	const content = {
+		"en": converter.makeHtml(metadata.content.en),
+		"de": converter.makeHtml(metadata.content.de),
+		"hu": converter.makeHtml(metadata.content.hu)
+	} 
+return { ...metadata, filename, slug, eventdate, content, sort }
 }

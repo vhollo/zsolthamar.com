@@ -13,6 +13,10 @@ image:
     en: Hello World 1 eng
     de: Hello World 1 deu
     hu: Hello World 1 hun
+content:
+  en: "**BMW** 330i *cabrio*"
+  de: "**BMW** 330i *cabrio*"
+  hu: "**BMW** 330i *cabrio*"
 pub_date: 2020-07-08 13:30
 ---
 - this
