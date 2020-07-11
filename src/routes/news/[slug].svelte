@@ -16,7 +16,7 @@
 
 <h1><span lang="en">{post.title.en}</span><span lang="de">{post.title.de}</span><span lang="hu">{post.title.hu}</span></h1>
 <date>{post.pub_date}</date>
-{#if post.image}
+{#if post.image.src}
 <figure>
 	<img src="{post.image.src}" alt="{post.title}"/>
 	{#if post.image.caption}
