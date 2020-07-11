@@ -11,9 +11,9 @@ date: 2020-08-07 00:00
 image:
   src: ""
   caption:
-    en: Myrna's Birthday
-    de: Myrna Geburtstag
-    hu: Myrna szülinapja
+    en: ""
+    de: ""
+    hu: ""
 content:
   en: "**BMW** 330i *cabrio*"
   de: "**BMW** 330i *cabrio*"
