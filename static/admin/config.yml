@@ -32,9 +32,10 @@ collections:
         required: false
         widget: "object"
         fields:
-        - {label: "Image", name: "src", widget: "image"}
+        - {label: "Image", name: "src", widget: "image", required: false}
         - label: "Caption"
           name: "caption"
+          required: false
           widget: "object"
           fields:
           - {label: "Caption En", name: "en", widget: "string"}
