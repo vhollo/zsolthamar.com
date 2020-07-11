@@ -9,7 +9,7 @@ title:
   hu: Esemény
 date: 2020-08-07 00:00
 image:
-  src: /uploads/4.jpg
+  src: ""
   caption:
     en: Myrna's Birthday
     de: Myrna Geburtstag
