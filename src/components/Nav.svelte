@@ -105,11 +105,11 @@
 		stroke: var(--txtcolor);
 		fill: transparent;
 		margin: 0;
-		padding: var(--gutter);
+		padding: var(--gutter2) var(--gutter);
 	}
 	header#home h1 {
 		background-color: var(--light);
-		padding: 0 var(--gutter) var(--gutter);
+		padding: var(--gutter) var(--gutter) var(--gutter2);
 	}
 	nav {
 		background-color: var(--toolbg);

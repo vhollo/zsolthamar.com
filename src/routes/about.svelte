@@ -13,7 +13,7 @@
 	<title>{post.slug}</title>
 </svelte:head> -->
 
-{#if post.image}
+{#if post.image.src}
 <figure>
 	<img src="{post.image.src}" alt="{post.image.caption}"/>
 	{#if post.image.caption}
