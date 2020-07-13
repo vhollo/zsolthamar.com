@@ -47,10 +47,16 @@ cv:
         szimfonikus zenekarának karmester-asszisztensévé.
   - date: "1993"
     detail:
-      en: Graduated with First Class Honors in music theory, and in 1994 with similar
-        honors as a composer, and in 1995 as a conductor.
-      hu: Első osztályú kitüntetéssel végzett zeneelméletből, 1994-ben hasonló
+      en: >-
+        Graduated with First Class Honors in music theory, and in 1994 with
+        similar honors as a composer, and in 1995 as a conductor.
+
+        At that point, he began to conduct widely in Hungary, all the leading Hungarian Orchestras. He appeared also abroad with the Tirgu Mures (Romania) Philharmonic Orchestra, the Cadaques Symphony Orchestra in Spain (where he won two prizes in the International Conductors’ Competition there in 1996), and the Dortmund and the Berlin Symphonies in Germany.
+      hu: >-
+        Első osztályú kitüntetéssel végzett zeneelméletből, 1994-ben hasonló
         kitüntetésekkel zeneszerzőként, 1995-ben pedig karmesterként.
+
+        1995-ben kiváló eredménnyel diplomázott, ugyanebben az évben 2. helyezést kapott, és közönségdíjat nyert a Magyar Televízió 8. Nemzetközi Karmesterversenyén. 
       de: >-
         Schloss er sein Studium mit der ersten Klasse in Musiktheorie ab, 1994
         mit ähnlichen Auszeichnungen als Komponist und 1995 als Dirigent.
