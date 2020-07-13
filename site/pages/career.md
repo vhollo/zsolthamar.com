@@ -45,4 +45,15 @@ cv:
         ernannt.
       hu: Tovább folytatta karmesterképzését, 1992-ben kinevezték az Akadémia saját
         szimfonikus zenekarának karmester-asszisztensévé.
+  - date: "1993"
+    detail:
+      en: Graduated with First Class Honors in music theory, and in 1994 with similar
+        honors as a composer, and in 1995 as a conductor.
+      hu: Első osztályú kitüntetéssel végzett zeneelméletből, 1994-ben hasonló
+        kitüntetésekkel zeneszerzőként, 1995-ben pedig karmesterként.
+      de: >-
+        Schloss er sein Studium mit der ersten Klasse in Musiktheorie ab, 1994
+        mit ähnlichen Auszeichnungen als Komponist und 1995 als Dirigent.
+
+        Zu diesem Zeitpunkt begann er in Ungarn die Leitung aller führenden ungarischen Orchester. Er war auch im Ausland mit dem Tirgu Mures (Rumänien) Philharmonic Orchestra, dem Cadaques Symphony Orchestra in Spanien (wo er 1996 zwei internationale Preise beim Internationalen Dirigentenwettbewerb gewann) sowie den Dortmunder und den Berliner Symphonikern.
 ---
