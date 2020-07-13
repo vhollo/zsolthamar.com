@@ -36,4 +36,13 @@ cv:
         Emil professzor zeneszerző hallgatójaként. Díjat nyert a Kodály Zoltán
         Zeneszerző Versenyen, és megbízást kapott a Kodály Zoltán Állami
         Alapítvány zenéjének írására.
+  - date: "1991"
+    detail:
+      en: He added conducting to his course of studies, and in 1992 he was appointed a
+        conductor’s assistant of the Academy’s own symphony orchestra.
+      de: Fügte er sein Studium zusätzlich zum Dirigieren hinzu und 1992 wurde er zum
+        Assistenten des Dirigenten des eigenen Symphonieorchesters der Akademie
+        ernannt.
+      hu: Tovább folytatta karmesterképzését, 1992-ben kinevezték az Akadémia saját
+        szimfonikus zenekarának karmester-asszisztensévé.
 ---
