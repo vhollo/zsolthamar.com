@@ -54,15 +54,35 @@ cv:
         similar honors as a composer, and in 1995 as a conductor.
 
         At that point, he began to conduct widely in Hungary, all the leading Hungarian Orchestras. He appeared also abroad with the Tirgu Mures (Romania) Philharmonic Orchestra, the Cadaques Symphony Orchestra in Spain (where he won two prizes in the International Conductors’ Competition there in 1996), and the Dortmund and the Berlin Symphonies in Germany.
-      hu: >-
+      hu: >
         Első osztályú kitüntetéssel végzett zeneelméletből, 1994-ben hasonló
         kitüntetésekkel zeneszerzőként, 1995-ben pedig karmesterként.
-
-        1995-ben kiváló eredménnyel diplomázott, ugyanebben az évben 2. helyezést kapott, és közönségdíjat nyert a Magyar Televízió 8. Nemzetközi Karmesterversenyén. 
       de: >-
         Schloss er sein Studium mit der ersten Klasse in Musiktheorie ab, 1994
         mit ähnlichen Auszeichnungen als Komponist und 1995 als Dirigent.
 
         Zu diesem Zeitpunkt begann er in Ungarn die Leitung aller führenden ungarischen Orchester. Er war auch im Ausland mit dem Tirgu Mures (Rumänien) Philharmonic Orchestra, dem Cadaques Symphony Orchestra in Spanien (wo er 1996 zwei internationale Preise beim Internationalen Dirigentenwettbewerb gewann) sowie den Dortmunder und den Berliner Symphonikern.
+    date2: "1995"
+  - date: "1995"
     date2: ""
+    detail:
+      en: >-
+        Zsolt Hamar entered the Eighth Hungarian Television International
+        Conductors’ Competition. The public voted Hamar its Public Prize as the
+        favorite conductor, while the jury awarded him Second Prize and the
+        special prize for the best performance of a work by Béla Bartók.
+
+
+        He worked with the late Lord Yehudi Menuhin in the Gala Concert of the World Music Day. Afterwards, Menuhin wrote, "He is one of the most dynamic, precise, intelligent of young conductors I have heard."
+      de: >-
+        Nahm Zsolt Hamar am 8. Internationalen Dirigentenwettbewerb des
+        ungarischen Fernsehens teil. Die Öffentlichkeit wählte Hamar zum
+        Publikumspreis, während die Jury ihm den 2. Preis und den Sonderpreis
+        für die beste Aufführung eines Werks von Béla Bartók verlieh.
+
+
+        1995 arbeitete er mit dem verstorbenen Lord Yehudi Menuhin beim Galakonzert des World Music Day zusammen. Danach schrieb Menuhin: "Er ist einer der dynamischsten, präzisesten und intelligentesten jungen Dirigenten, die ich je gehört habe."
+      hu: "Kiváló eredménnyel diplomázott, ugyanebben az évben 2. helyezést kapott, és
+        közönségdíjat nyert a Magyar Televízió 8. Nemzetközi Karmesterversenyén.
+        "
 ---
