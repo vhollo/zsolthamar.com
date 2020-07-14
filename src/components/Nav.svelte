@@ -67,8 +67,10 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(120deg, #eaee44, #33d0ff);
-    mix-blend-mode: darken;
+    /* background-image: linear-gradient(120deg, #eaee44, #33d0ff); */
+    /* background-image: linear-gradient(45deg, var(--dark), transparent); */
+		mix-blend-mode: darken;
+		animation: pulse 20s infinite;
 	}
 
 	header {
@@ -79,7 +81,7 @@
 
 	header#home {
 		fill: var(--bgcolor);
-		background-image: url(/palca.jpg);
+		background-image: url(/palca-kis.png);
 		background-repeat: no-repeat;
 		background-size: cover;
     background-position: 50% 70%;
@@ -173,4 +175,15 @@
 	:global(#lang-de:checked ~ #sapper) [for='lang-de'] { color: var(--maincolor); }
 	:global(#lang-hu:checked ~ #sapper) [for='lang-hu'] { color: var(--maincolor); }
 
+	@keyframes pulse {
+		0% {
+			background-color: var(--extcolor);
+		}
+		50% {
+			background-color: var(--maincolor);
+		}
+		100% {
+			background-color: var(--extcolor);
+		}
+	}
 </style>
