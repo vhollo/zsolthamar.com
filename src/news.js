@@ -19,14 +19,14 @@ function transform({filename, metadata, html}) {
 	const sort = new Date(metadata.date || metadata.pub_date)
 	
 	const eventdate = {
-		"en": metadata.date ? new Date(metadata.date).toLocaleString('en-US', { year: "numeric", month: "short", day: "numeric" }) : '',
-		"de": metadata.date ? new Date(metadata.date).toLocaleString('de-DE', { year: "numeric", month: "short", day: "numeric" }) : '',
-		"hu": metadata.date ? new Date(metadata.date).toLocaleString('hu-HU', { year: "numeric", month: "short", day: "numeric" }) : ''
+		"en": metadata.date ? new Date(metadata.date).toLocaleString('en-US', { year: "numeric", month: "long", day: "numeric" }) : '',
+		"de": metadata.date ? new Date(metadata.date).toLocaleString('de-DE', { year: "numeric", month: "long", day: "numeric" }) : '',
+		"hu": metadata.date ? new Date(metadata.date).toLocaleString('hu-HU', { year: "numeric", month: "long", day: "numeric" }) : ''
 	}
 	const content = {
 		"en": converter.makeHtml(metadata.content.en),
 		"de": converter.makeHtml(metadata.content.de),
 		"hu": converter.makeHtml(metadata.content.hu)
 	} 
-return { ...metadata, filename, slug, eventdate, content, sort }
+return { ...metadata, filename, slug, eventdate, content, html, sort }
 }

@@ -1,12 +1,13 @@
 <script>
   import {posts} from '../../news'
 </script>
-<!-- 
+
 <svelte:head>
-  <title>Zsolt's Weblog</title>
+	<!-- <title>Zsolt's Weblog</title> -->
+	<!-- <meta name="robots" content="all" /> -->
 </svelte:head>
- -->
-<h2>Zsolt's Weblog</h2>
+
+<h2>News & Events</h2>
 
 {#each posts as post}
   <article>
@@ -16,9 +17,8 @@
 			<date lang="en">{post.eventdate.en}</date><date lang="de">{post.eventdate.de}</date><date lang="hu">{post.eventdate.hu}</date>
 			{#if post.image && post.image.src}
 			<figure>
-				<img src="{post.image.src}"/>
-				<figcaption><span lang="en">{post.image.caption.en}</span><span lang="de">{post.image.caption.de}</span><span
-			lang="hu">{post.image.caption.hu}</span></figcaption>
+				<img src="{post.image.src}" alt=""/>
+				<figcaption><span lang="en">{post.image.caption.en}</span><span lang="de">{post.image.caption.de}</span><span lang="hu">{post.image.caption.hu}</span></figcaption>
 			</figure>
 			{/if}
     </a>

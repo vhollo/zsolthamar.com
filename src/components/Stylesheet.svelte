@@ -1,10 +1,18 @@
 <style global>
 	@import "../assets/global.css";
+	@font-face {
+				font-family: "SilkSerif-Regular";
+				/* src: url('assets/fonts/SilkSerif-Regular.eot'); */
+				src: url("/SilkSerif-Regular.ttf") format("truetype");
+				/* font-weight: normal; */
+				/* font-style: normal; */
+				font-weight: 400;
+	}
 
 	:root {
 		font-size: clamp(75%, 78% + .5vw, 115%);
 		line-height: 1.75;
-		--orange: #ff3d00;
+		--orange: tomato;
 		--green: #c0ff55;
 		--light: #e2e8f0;
 		--light25: #e2e8f03f;
@@ -50,6 +58,10 @@
 		color: var(--txtcolor);
 	}
 
+	blockquote, em {
+		font-family: "SilkSerif-Regular", serif;
+	}
+
 	body > input { display: none; }
 	#lang-en:not(:checked) ~ #sapper [lang='en'] { display: none; }
 	#lang-de:not(:checked) ~ #sapper [lang='de'] { display: none; }
@@ -61,9 +73,10 @@
 		padding: var(--spacer) var(--gutter) var(--gutter);
 	}
 
-	/* h1, h2, h3, h4, h5, h6 {
-		font-family: system-ui, sans-serif;
-	} */
+	h1, h2, h3, h4, h5, h6 {
+		/* font-family: system-ui, sans-serif; */
+		font-family: "SilkSerif-Regular", serif;
+	}
 	h1 {
 		font-size: 3rem;
 		margin: 2rem 0;

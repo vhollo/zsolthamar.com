@@ -13,7 +13,7 @@
 	<title>{post.slug}</title>
 </svelte:head> -->
 
-{#if post.image.src}
+{#if post.image}
 <figure>
 	<img src="{post.image.src}" alt="{post.image.caption}"/>
 	{#if post.image.caption}
@@ -21,4 +21,4 @@
 	{/if}
 </figure>
 {/if}
-<div lang="en">{post.intro.en}</div><div lang="de">{post.intro.de}</div><div lang="hu">{post.intro.hu}</div>
+<div lang="en">{@html post.content.en}</div><div lang="de">{@html post.content.de}</div><div lang="hu">{@html post.content.hu}</div>

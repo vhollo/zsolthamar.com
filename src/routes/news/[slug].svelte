@@ -1,5 +1,6 @@
 <script context="module">
   import {findPost} from '../../news'
+	import { lang } from '../../stores.js';
 
   export function preload(page) {
     return { post: findPost(page.params.slug) }
@@ -11,12 +12,16 @@
 </script>
 
 <svelte:head>
-	<title>{post.title.en}</title>
+	<title>{post.title[$lang]}</title>
 	<base target="_blank">
 </svelte:head>
 
 <h1><span lang="en">{post.title.en}</span><span lang="de">{post.title.de}</span><span lang="hu">{post.title.hu}</span></h1>
-<date>{post.pub_date}</date>
+{#if post.eventdate}
+<date lang="en">{post.eventdate.en}</date>
+<date lang="de">{post.eventdate.de}</date>
+<date lang="hu">{post.eventdate.hu}</date>
+{/if}
 {#if post.image && post.image.src}
 <figure>
 	<img src="{post.image.src}" alt="{post.title}"/>

@@ -1,4 +1,6 @@
 <script context="module">
+	/* import { onMount } from 'svelte' */
+	import { lang } from '../stores.js'
 	import { Wave2, Wordmark } from "./svg/SVGs.svelte"
 </script>
 
@@ -45,17 +47,17 @@
 			</li>
 		</ul>
 		<ul>
-			<li><label for="lang-en">en</label></li>
+			<li><label for="lang-en" on:click="{() => $lang = 'en'}">en</label></li>
 			<li>/</li>
-			<li><label for="lang-de">de</label></li>
+			<li><label for="lang-de" on:click="{() => $lang = 'de'}">de</label></li>
 			<li>/</li>
-			<li><label for="lang-hu">hu</label></li>
+			<li><label for="lang-hu" on:click="{() => $lang = 'hu'}">hu</label></li>
 		</ul>
 	</div>
 </nav>
 
 <style>
-	/* header {
+	header {
 		position: relative;
 	}
 	header::before {
@@ -67,7 +69,7 @@
     height: 100%;
     background-image: linear-gradient(120deg, #eaee44, #33d0ff);
     mix-blend-mode: darken;
-	} */
+	}
 
 	header {
 		display: flex;
@@ -119,6 +121,7 @@
 		/* padding: 0 1em; */
 		position: sticky;
 		top: 0;
+		z-index: 1;
 	}
 	nav div {
 		max-width: 64em;

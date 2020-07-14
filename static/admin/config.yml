@@ -107,20 +107,26 @@ collections:
         name: "career"
         file: "site/pages/career.md"
         fields:
-          - label: "Introduction"
-            name: "content"
+          - label: "Summary"
+            name: "summary"
             widget: "object"
             fields:
-            - {label: "Introduction En", name: "en", widget: "markdown"}
-            - {label: "Introduction De", name: "de", widget: "markdown"}
-            - {label: "Introduction Hu", name: "hu", widget: "markdown"}
+            - {label: "Summary En", name: "en", widget: "markdown"}
+            - {label: "Summary De", name: "de", widget: "markdown"}
+            - {label: "Summary Hu", name: "hu", widget: "markdown"}
           - label: CV
             name: cv
             widget: list
             fields:
-              - {label: "Date", name: "date", widget: "datetime", required: false, default: "", format: "YYYY", dateFormat: "YYYY", timeFormat: false }
-              - {label: Position, name: position, widget: string}
-              - {label: Location, name: location, widget: string}
+              - {label: "Date from", name: "date", widget: "datetime", required: false, default: "", format: "YYYY", dateFormat: "YYYY", timeFormat: false }
+              - {label: "Date till", name: "date2", widget: "datetime", required: false, default: "", format: "YYYY", dateFormat: "YYYY", timeFormat: false }
+              - label: "Detail"
+                name: "detail"
+                widget: "object"
+                fields:
+                - {label: "Detail En", name: "en", widget: "markdown"}
+                - {label: "Detail De", name: "de", widget: "markdown"}
+                - {label: "Detail Hu", name: "hu", widget: "markdown"}
               - label: "Image"
                 name: "image"
                 widget: "object"
