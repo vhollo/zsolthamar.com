@@ -85,4 +85,19 @@ cv:
       hu: "Kiváló eredménnyel diplomázott, ugyanebben az évben 2. helyezést kapott, és
         közönségdíjat nyert a Magyar Televízió 8. Nemzetközi Karmesterversenyén.
         "
+  - date: "1996"
+    date2: "1997"
+    detail:
+      hu: >-
+        A spanyolországi Cadaques-ben rendezett karmesterversenyen ugyancsak
+        második díjat nyert, 1997-ben a Portugál Rádió Nemzetközi
+        Karmesterversenyén pedig első helyezett lett. 
+
+        Karmesterként bejárta az ország szinte összes szimfonikus zenekarát, rendszeresen vezényel a Magyar Állami Operaházban. 
+      en: He became the First Permanent Conductor of the Hungarian National
+        Philharmonic Orchestra (the country’s most prestigious) at the
+        invitation of its co-founder and music director Zoltan Kocsis.
+      de: Wurde er auf Einladung seines Mitbegründers und Musikdirektors Zoltan Kocsis
+        der erste ständige Dirigent der Ungarischen Nationalphilharmonie (die
+        prestigeträchtigste des Landes).
 ---
