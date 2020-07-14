@@ -36,6 +36,7 @@ cv:
         Emil professzor zeneszerző hallgatójaként. Díjat nyert a Kodály Zoltán
         Zeneszerző Versenyen, és megbízást kapott a Kodály Zoltán Állami
         Alapítvány zenéjének írására.
+    date2: ""
   - date: "1991"
     detail:
       en: He added conducting to his course of studies, and in 1992 he was appointed a
@@ -45,6 +46,7 @@ cv:
         ernannt.
       hu: Tovább folytatta karmesterképzését, 1992-ben kinevezték az Akadémia saját
         szimfonikus zenekarának karmester-asszisztensévé.
+    date2: "1992"
   - date: "1993"
     detail:
       en: >-
@@ -62,4 +64,5 @@ cv:
         mit ähnlichen Auszeichnungen als Komponist und 1995 als Dirigent.
 
         Zu diesem Zeitpunkt begann er in Ungarn die Leitung aller führenden ungarischen Orchester. Er war auch im Ausland mit dem Tirgu Mures (Rumänien) Philharmonic Orchestra, dem Cadaques Symphony Orchestra in Spanien (wo er 1996 zwei internationale Preise beim Internationalen Dirigentenwettbewerb gewann) sowie den Dortmunder und den Berliner Symphonikern.
+    date2: ""
 ---
