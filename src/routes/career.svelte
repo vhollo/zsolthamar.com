@@ -36,7 +36,7 @@
 </dl>
 
 <style>
-	p { font-weight: bold; }
+	/* p { font-weight: bold; } */
 	dl {
 		display: grid;
 		grid-template-columns: 12ch 1fr;
