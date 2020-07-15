@@ -84,15 +84,12 @@ cv:
     image:
       src: /uploads/1200px-yehudi_menuhin_1976.jpg
       caption:
-        en: '<a href="https://commons.wikimedia.org/wiki/File:Yehudi_Menuhin_1976.jpg"
-          title="via Wikimedia Commons">Allan warrenderivative work: Parzi</a> /
-          <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA</a>'
-        de: '<a href="https://commons.wikimedia.org/wiki/File:Yehudi_Menuhin_1976.jpg"
-          title="via Wikimedia Commons">Allan warrenderivative work: Parzi</a> /
-          <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA</a>'
-        hu: '<a href="https://commons.wikimedia.org/wiki/File:Yehudi_Menuhin_1976.jpg"
-          title="via Wikimedia Commons">Allan warrenderivative work: Parzi</a> /
-          <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA</a>'
+        en: "Allan warrenderivative work: Parzi / CC BY-SA"
+        de: "Allan warrenderivative work: Parzi / CC BY-SA"
+        hu: "Allan warrenderivative work: Parzi / CC BY-SA"
+      link: '<a href="https://commons.wikimedia.org/wiki/File:Yehudi_Menuhin_1976.jpg"
+        title="via Wikimedia Commons">Allan warrenderivative work: Parzi</a> /
+        <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA</a>'
   - date: "1996"
     date2: "1997"
     detail:
