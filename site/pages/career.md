@@ -82,9 +82,13 @@ cv:
 
 
         1995 arbeitete er mit dem verstorbenen Lord Yehudi Menuhin beim Galakonzert des World Music Day zusammen. Danach schrieb Menuhin: "Er ist einer der dynamischsten, präzisesten und intelligentesten jungen Dirigenten, die ich je gehört habe."
-      hu: "Kiváló eredménnyel diplomázott, ugyanebben az évben 2. helyezést kapott, és
-        közönségdíjat nyert a Magyar Televízió 8. Nemzetközi Karmesterversenyén.
-        "
+      hu: >-
+        Kiváló eredménnyel diplomázott, ugyanebben az évben 2. helyezést kapott,
+        és közönségdíjat nyert a Magyar Televízió 8. Nemzetközi
+        Karmesterversenyén. 
+
+
+        Dolgozott együtt Lord Yehudi Menuhinnal a Zene Világnapi gálakoncertjén. Később Menuhin azt írta: "Ő az egyik legdinamikusabb, legpontosabb, intelligensebb fiatal karmester, akit hallottam."
     image:
       src: /uploads/1200px-yehudi_menuhin_1976.jpg
       caption:
