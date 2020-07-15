@@ -84,9 +84,25 @@ cv:
     image:
       src: /uploads/1200px-yehudi_menuhin_1976.jpg
       caption:
-        en: https://commons.wikimedia.org/wiki/File:Yehudi_Menuhin_1976.jpg#/media/File:Yehudi_Menuhin_1976.jpg
-        de: https://commons.wikimedia.org/wiki/File:Yehudi_Menuhin_1976.jpg#/media/File:Yehudi_Menuhin_1976.jpg
-        hu: https://commons.wikimedia.org/wiki/File:Yehudi_Menuhin_1976.jpg#/media/File:Yehudi_Menuhin_1976.jpg
+        en: '<a href="https://commons.wikimedia.org/wiki/File:Yehudi_Menuhin_1976.jpg"
+          title="via Wikimedia
+          Commons">Yehudi_Menuhin_&amp;_Stephane_Grappelli_Allan_Warren.jpg:
+          Allan warrenderivative work: Parzi</a> / <a
+          href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA</a>'
+        de: 'https://commons.wikimedia.org/wiki/File:Yehudi_M<a
+          href="https://commons.wikimedia.org/wiki/File:Yehudi_Menuhin_1976.jpg"
+          title="via Wikimedia
+          Commons">Yehudi_Menuhin_&amp;_Stephane_Grappelli_Allan_Warren.jpg:
+          Allan warrenderivative work: Parzi</a> / <a
+          href="https://creativecommons.org/licenses/by-sa/3.0">CC
+          BY-SA</a>enuhin_1976.jpg#/media/File:Yehudi_Menuhin_1976.jpg'
+        hu: 'https://commons.wikimedia.org/wiki/File:Yeh<a
+          href="https://commons.wikimedia.org/wiki/File:Yehudi_Menuhin_1976.jpg"
+          title="via Wikimedia
+          Commons">Yehudi_Menuhin_&amp;_Stephane_Grappelli_Allan_Warren.jpg:
+          Allan warrenderivative work: Parzi</a> / <a
+          href="https://creativecommons.org/licenses/by-sa/3.0">CC
+          BY-SA</a>udi_Menuhin_1976.jpg#/media/File:Yehudi_Menuhin_1976.jpg'
   - date: "1996"
     date2: "1997"
     detail:
