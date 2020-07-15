@@ -68,7 +68,8 @@
 	#lang-hu:not(:checked) ~ #sapper [lang='hu'] { display: none; }
 
 	main {
-		max-width: 64em;
+		/* max-width: 64em; */
+		max-width: 80ch;
 		margin: 0 auto;
 		padding: var(--spacer) var(--gutter) var(--gutter);
 	}

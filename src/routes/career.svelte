@@ -4,6 +4,7 @@
 	export function preload() {
 		return { post: findPost() }
 	}
+	import { lang } from '../stores.js'
 </script>
 <script>
 	export let post
@@ -13,18 +14,22 @@
 	<title>{post.slug}</title>
 </svelte:head> -->
 
-{#if post.image}
-<figure>
-	<img src="{post.image.src}" alt="{post.image.caption}"/>
-	{#if post.image.caption}
-	<figcaption><span lang="en">{post.image.caption.en}</span><span lang="de">{post.image.caption.de}</span><span lang="hu">{post.image.caption.hu}</span></figcaption>
-	{/if}
-</figure>
-{/if}
 <dl>
-{#each post.cv as cv}
-	<dt><date>{cv.date}{#if cv.date2}–{cv.date2}{/if}</date></dt>
-	<dd lang="en">{@html cv.detail.en}</dd><dd lang="de">{@html cv.detail.de}</dd><dd lang="hu">{@html cv.detail.hu}</dd>
+{#each post.cv as post}
+	<dt><date>{post.date}{#if post.date2}–{post.date2}{/if}</date></dt>
+	<dd>
+		<span lang="{$lang}">{@html post.detail[$lang]}</span>
+		{#if post.image}
+		<figure>
+			<img src="{post.image.src}" alt="{post.image.caption[$lang]}"/>
+			{#if post.image.caption}
+			<figcaption>
+				<span lang="{$lang}">{post.image.caption[$lang]}</span>
+			</figcaption>
+			{/if}
+		</figure>
+		{/if}
+	</dd>
 {/each}
 </dl>
 
@@ -57,5 +62,13 @@
 	dd {
 		margin-left: -12ch;
     padding-bottom: var(--gutter);
+	}
+
+	figure {
+		max-width: 24ch;
+		margin-left: auto;
+	}
+	figcaption span {
+		word-wrap: break-word;
 	}
 </style>

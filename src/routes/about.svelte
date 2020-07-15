@@ -1,4 +1,5 @@
 <script context="module">
+	import { lang } from '../stores.js'
 	import { findPost } from '../about'
 
 	export function preload() {
@@ -21,4 +22,5 @@
 	{/if}
 </figure>
 {/if}
-<div lang="en">{@html post.content.en}</div><div lang="de">{@html post.content.de}</div><div lang="hu">{@html post.content.hu}</div>
+<div lang="{$lang}">{@html post.content[$lang]}</div>
+<!-- <div lang="en">{@html post.content.en}</div><div lang="de">{@html post.content.de}</div><div lang="hu">{@html post.content.hu}</div> -->

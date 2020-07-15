@@ -10,7 +10,7 @@
 
 {#if segment}
 <header>
-	<h1><a aria-current="{segment === undefined ? 'page' : undefined}" href=".">{@html Wordmark}</a></h1>
+	<a aria-current="{segment === undefined ? 'page' : undefined}" href="."><h1>{@html Wordmark}</h1></a>
 </header>
 {:else}
 <header id="home">
@@ -59,8 +59,11 @@
 <style>
 	header {
 		position: relative;
+		display: flex;
+		flex-direction: column;
+    justify-content: flex-end;
 	}
-	header::before {
+	header::before, nav::before {
     content: "";
     position: absolute;
     top: 0;
@@ -70,18 +73,13 @@
     /* background-image: linear-gradient(120deg, #eaee44, #33d0ff); */
     /* background-image: linear-gradient(45deg, var(--dark), transparent); */
 		mix-blend-mode: darken;
+		filter: contrast(0.25);
 		animation: pulse 20s infinite;
-	}
-
-	header {
-		display: flex;
-		flex-direction: column;
-    justify-content: flex-end;
 	}
 
 	header#home {
 		fill: var(--bgcolor);
-		background-image: url(/palca-kis.png);
+		background-image: url(/palca-square.png);
 		background-repeat: no-repeat;
 		background-size: cover;
     background-position: 50% 70%;
@@ -106,7 +104,7 @@
 		margin-bottom: -.75em;
 	} */
 	h1 {
-		stroke: var(--txtcolor);
+		stroke: var(--toolbg);
 		fill: transparent;
 		margin: 0;
 		padding: var(--gutter2) var(--gutter);
@@ -115,18 +113,23 @@
 		background-color: var(--light);
 		padding: var(--gutter) var(--gutter) var(--gutter2);
 	}
+	h1 :global(svg) {
+		height: 100%;
+    width: 20ch;
+	}
 	nav {
-		background-color: var(--toolbg);
-		color: var(--tooltxt);
-		/* border-bottom: 1px solid rgba(255, 62, 0, 0.1); */
+		/* background-color: var(--toolbg);
+		color: var(--tooltxt); */
+		border-bottom: 1px solid rgba(255, 62, 0, 0.1);
 		font-weight: 300;
+		color: var(--toolbg);
 		/* padding: 0 1em; */
 		position: sticky;
 		top: 0;
 		z-index: 1;
 	}
 	nav div {
-		max-width: 64em;
+		max-width: 80ch;
     margin: 0 auto;
 		display: flex;
 		justify-content: space-between;
@@ -135,7 +138,7 @@
 	ul {
 		overflow-x: auto;
 		white-space: nowrap;
-		max-width: 64em;
+		max-width: 80ch;
     /* margin-right: var(--gutter); */
 	}
 	li {
@@ -143,18 +146,13 @@
 		vertical-align: middle;
 	}
 
-	li a {
-		padding: var(--gutter);
-	}
-	li label {
-		padding: var(--gutter) 0;
-	}
 	li:last-child label {
 		padding-right: var(--gutter);
 	}
 	li a, li label {
 		position: relative;
 		display: inline-block;
+		padding: var(--gutter);
 		text-decoration: none;
 		font-weight: bolder;
 	}
@@ -162,7 +160,7 @@
 	[aria-current] {
 	}
 
-	[aria-current]::after {
+	/* [aria-current]::after {
 		position: absolute;
 		content: "";
 		width: calc(100% - var(--gutter2));
@@ -170,10 +168,16 @@
 		background-color: var(--maincolor);
 		display: block;
 		bottom: 0;
+	} */
+	[aria-current]::after, :global(#lang-en:checked ~ #sapper) [for='lang-en']::after, :global(#lang-de:checked ~ #sapper) [for='lang-de']::after, :global(#lang-hu:checked ~ #sapper) [for='lang-hu']::after {
+		position: absolute;
+		content: "";
+		width: calc(100% - var(--gutter2));
+		height: var(--guttery, 2px);
+		background-color: var(--bgcolor);
+		display: block;
+		bottom: 0;
 	}
-	:global(#lang-en:checked ~ #sapper) [for='lang-en'] { color: var(--maincolor); }
-	:global(#lang-de:checked ~ #sapper) [for='lang-de'] { color: var(--maincolor); }
-	:global(#lang-hu:checked ~ #sapper) [for='lang-hu'] { color: var(--maincolor); }
 
 	@keyframes pulse {
 		0% {
