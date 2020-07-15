@@ -85,6 +85,12 @@ cv:
       hu: "Kiváló eredménnyel diplomázott, ugyanebben az évben 2. helyezést kapott, és
         közönségdíjat nyert a Magyar Televízió 8. Nemzetközi Karmesterversenyén.
         "
+    image:
+      src: /uploads/1200px-yehudi_menuhin_1976.jpg
+      caption:
+        en: https://commons.wikimedia.org/wiki/File:Yehudi_Menuhin_1976.jpg#/media/File:Yehudi_Menuhin_1976.jpg
+        de: https://commons.wikimedia.org/wiki/File:Yehudi_Menuhin_1976.jpg#/media/File:Yehudi_Menuhin_1976.jpg
+        hu: https://commons.wikimedia.org/wiki/File:Yehudi_Menuhin_1976.jpg#/media/File:Yehudi_Menuhin_1976.jpg
   - date: "1996"
     date2: "1997"
     detail:
