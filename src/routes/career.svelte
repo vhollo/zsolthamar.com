@@ -13,7 +13,9 @@
 <!-- <svelte:head>
 	<title>{post.slug}</title>
 </svelte:head> -->
-
+{#if post.summary}
+	<h5 lang="{$lang}">{post.summary[$lang]}</h5>
+{/if}
 <dl>
 {#each post.cv as post}
 	<dt><date>{post.date}{#if post.date2}–{post.date2}{/if}</date></dt>
@@ -34,6 +36,7 @@
 </dl>
 
 <style>
+	p { font-weight: bold; }
 	dl {
 		display: grid;
 		grid-template-columns: 12ch 1fr;
@@ -51,7 +54,7 @@
 	dt::after {
 		content: '';
 		position: absolute;
-		top: var(--guttery);
+		top: var(--gutterx);
 		right: var(--gutterx-);
 		width: var(--gutter);
 		height: var(--gutter);
