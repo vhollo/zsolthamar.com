@@ -1,8 +1,4 @@
 ---
-content:
-  en: Intren
-  de: Intrde
-  hu: Intrhu
 summary:
   hu: 1968-ban, Budapesten született. Hatéves korában kezdett zongorázni, majd a
     Bartók Béla Konzervatóriumban zeneszerzést tanult. A Zeneakadémia
@@ -24,8 +20,7 @@ cv:
         Hungarian composer and professor Emil Petrovics. He won a prize in the
         Zoltán Kodály Composer Competition in Hungary and was commissioned to
         write music for the Zoltán Kodály State Foundation.
-      de: >-
-        Trat er als Kompositionsschüler des ungarischen Komponisten und
+      de: Trat er als Kompositionsschüler des ungarischen Komponisten und
         Professors Emil Petrovics an die Franz-Liszt-Musikakademie ein. Er
         gewann einen Preis beim Zoltán Kodály Composer Competition in Ungarn und
         erhielt den Auftrag, Musik für die Zoltán Kodály State Foundation zu
@@ -66,29 +61,26 @@ cv:
   - date: "1995"
     date2: ""
     detail:
-      en: >-
-        Zsolt Hamar entered the Eighth Hungarian Television International
+      en: "Zsolt Hamar entered the Eighth Hungarian Television International
         Conductors’ Competition. The public voted Hamar its Public Prize as the
         favorite conductor, while the jury awarded him Second Prize and the
         special prize for the best performance of a work by Béla Bartók.
 
 
-        He worked with the late Lord Yehudi Menuhin in the Gala Concert of the World Music Day. Afterwards, Menuhin wrote, "He is one of the most dynamic, precise, intelligent of young conductors I have heard."
-      de: >-
-        Nahm Zsolt Hamar am 8. Internationalen Dirigentenwettbewerb des
+        He worked with the late Lord Yehudi Menuhin in the Gala Concert of the World Music Day. Afterwards, Menuhin wrote, <q>He is one of the most dynamic, precise, intelligent of young conductors I have heard.</q>"
+      de: "Nahm Zsolt Hamar am 8. Internationalen Dirigentenwettbewerb des
         ungarischen Fernsehens teil. Die Öffentlichkeit wählte Hamar zum
         Publikumspreis, während die Jury ihm den 2. Preis und den Sonderpreis
         für die beste Aufführung eines Werks von Béla Bartók verlieh.
 
 
-        1995 arbeitete er mit dem verstorbenen Lord Yehudi Menuhin beim Galakonzert des World Music Day zusammen. Danach schrieb Menuhin: "Er ist einer der dynamischsten, präzisesten und intelligentesten jungen Dirigenten, die ich je gehört habe."
-      hu: >-
-        Kiváló eredménnyel diplomázott, ugyanebben az évben 2. helyezést kapott,
+        1995 arbeitete er mit dem verstorbenen Lord Yehudi Menuhin beim Galakonzert des World Music Day zusammen. Danach schrieb Menuhin: <q>Er ist einer der dynamischsten, präzisesten und intelligentesten jungen Dirigenten, die ich je gehört habe.</q>"
+      hu: "Kiváló eredménnyel diplomázott, ugyanebben az évben 2. helyezést kapott,
         és közönségdíjat nyert a Magyar Televízió 8. Nemzetközi
-        Karmesterversenyén.
+				Karmesterversenyén.
 
 
-        Dolgozott együtt Lord Yehudi Menuhinnal a Zene Világnapi gálakoncertjén. Később Menuhin azt írta: "Ő az egyik legdinamikusabb, legpontosabb, intelligensebb fiatal karmester, akit hallottam."
+				Dolgozott együtt Lord Yehudi Menuhinnal a Zene Világnapi gálakoncertjén. Később Menuhin azt írta: <q>Ő az egyik legdinamikusabb, legpontosabb, intelligensebb fiatal karmester, akit hallottam.</q>"
     image:
       src: /uploads/1200px-yehudi_menuhin_1976.jpg
       caption:
@@ -98,12 +90,11 @@ cv:
   - date: "1996"
     date2: "1997"
     detail:
-      hu: >-
-        A spanyolországi Cadaques-ben rendezett karmesterversenyen ugyancsak
+      hu: "A spanyolországi Cadaques-ben rendezett karmesterversenyen ugyancsak
         második díjat nyert, 1997-ben a Portugál Rádió Nemzetközi
         Karmesterversenyén pedig első helyezett lett. 
 
-        Karmesterként bejárta az ország szinte összes szimfonikus zenekarát, rendszeresen vezényel a Magyar Állami Operaházban. 
+        Karmesterként bejárta az ország szinte összes szimfonikus zenekarát, rendszeresen vezényel a Magyar Állami Operaházban."
       en: He became the First Permanent Conductor of the Hungarian National
         Philharmonic Orchestra (the country’s most prestigious) at the
         invitation of its co-founder and music director Zoltan Kocsis.
