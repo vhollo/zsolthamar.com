@@ -139,6 +139,7 @@ collections:
                   - {label: "Caption En", name: "en", widget: "string", required: false}
                   - {label: "Caption De", name: "de", widget: "string", required: false}
                   - {label: "Caption Hu", name: "hu", widget: "string", required: false}
+                - {label: "Link", name: "link", widget: "string", required: false}
 
       - label: "Photos"
         name: "photos"

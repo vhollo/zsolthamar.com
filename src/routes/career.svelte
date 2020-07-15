@@ -25,8 +25,8 @@
 		<figure>
 			<img src="{post.image.src}" alt="{post.image.caption[$lang]}"/>
 			{#if post.image.caption}
-			<figcaption>
-				<span lang="{$lang}">{post.image.caption[$lang]}</span>
+			<figcaption lang="{$lang}">
+				{@html post.image.caption[$lang]}
 			</figcaption>
 			{/if}
 		</figure>
@@ -71,7 +71,8 @@
 		max-width: 24ch;
 		margin-left: auto;
 	}
-	figcaption span {
+	figcaption {
+		font-size: smaller;
 		word-wrap: break-word;
 	}
 </style>
