@@ -74,9 +74,10 @@
     height: 100%;
     /* background-image: linear-gradient(120deg, #eaee44, #33d0ff); */
     /* background-image: linear-gradient(45deg, var(--dark), transparent); */
-		mix-blend-mode: darken;
+		/* mix-blend-mode: darken; */
 		filter: blur(0px);
 		animation: pulse 20s infinite;
+		mix-blend-mode: color;
 	}
 
 	header#home {
