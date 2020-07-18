@@ -10,12 +10,14 @@
 
 {#if segment}
 <header>
-	<a aria-current="{segment === undefined ? 'page' : undefined}" href="."><h1>{@html Wordmark}</h1></a>
+	<!-- <a aria-current="{segment === undefined ? 'page' : undefined}" href="."><h1>{@html Wordmark}</h1></a> -->
+	<a aria-current="{segment === undefined ? 'page' : undefined}" href="."><h1>ZSOLT HAMAR</h1></a>
 </header>
 {:else}
 <header id="home">
 	{@html Wave2}
-	<h1>{@html Wordmark}</h1>
+	<!-- <h1>{@html Wordmark}</h1> -->
+	<h1>ZSOLT HAMAR</h1>
 </header>
 {/if}
 
@@ -73,13 +75,13 @@
     /* background-image: linear-gradient(120deg, #eaee44, #33d0ff); */
     /* background-image: linear-gradient(45deg, var(--dark), transparent); */
 		mix-blend-mode: darken;
-		filter: contrast(0.25);
+		filter: blur(0px);
 		animation: pulse 20s infinite;
 	}
 
 	header#home {
 		fill: var(--bgcolor);
-		background-image: url(/palca-square.png);
+		background-image: url(/palca.png);
 		background-repeat: no-repeat;
 		background-size: cover;
     background-position: 50% 70%;
@@ -108,6 +110,10 @@
 		fill: transparent;
 		margin: 0;
 		padding: var(--gutter2) var(--gutter);
+		text-align: center;
+    color: var(--toolbg);
+    font-weight: bold;
+    letter-spacing: .5rem;
 	}
 	header#home h1 {
 		background-color: var(--light);
@@ -115,7 +121,8 @@
 	}
 	h1 :global(svg) {
 		height: 100%;
-    width: 20ch;
+		max-width: 16ch;
+		width: 75%;
 	}
 	nav {
 		/* background-color: var(--toolbg);

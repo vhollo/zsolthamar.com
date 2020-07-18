@@ -60,6 +60,7 @@
 
 	blockquote, em {
 		font-family: "SilkSerif-Regular", serif;
+		font-size: 117%;
 	}
 
 	body > input { display: none; }

@@ -26,7 +26,11 @@
 			<img src="{post.image.src}" alt="{post.image.caption[$lang]}"/>
 			{#if post.image.caption}
 			<figcaption lang="{$lang}">
+				{#if post.image.link}
+				<a href="{post.image.link}">{@html post.image.caption[$lang]}</a>
+				{:else}
 				{@html post.image.caption[$lang]}
+				{/if}
 			</figcaption>
 			{/if}
 		</figure>
@@ -64,7 +68,7 @@
 	}
 	dd {
 		margin-left: -12ch;
-    padding-bottom: var(--gutter);
+    padding-bottom: var(--gutter2);
 	}
 
 	figure {
