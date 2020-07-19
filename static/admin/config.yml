@@ -70,6 +70,18 @@ collections:
             - {label: "Content En", name: "en", widget: "markdown"}
             - {label: "Content De", name: "de", widget: "markdown"}
             - {label: "Content Hu", name: "hu", widget: "markdown"}
+            - label: "Image"
+              name: "image"
+              widget: "object"
+              fields:
+              - {label: "Image", name: "src", widget: "image"}
+              - label: "Caption"
+                name: "caption"
+                widget: "object"
+                fields:
+                - {label: "Caption En", name: "en", widget: "string"}
+                - {label: "Caption De", name: "de", widget: "string"}
+                - {label: "Caption Hu", name: "hu", widget: "string"}
           - {label: "Body", name: "body", widget: "code", default_language: "svelte"}
 
       - label: "About Page"
@@ -168,20 +180,20 @@ collections:
       - label: "Critics"
         name: "critics"
         file: "site/pages/critics.md"
-        identifier_field: critic.title.en
+        identifier_field: c.title.en
         fields:
           - label: "Critics"
             label_singular: "Critic"
             name: "critic"
             widget: "list"
             fields:
-              - label: "Critic"
-                name: "critic"
+              - label: "Quote (copy-paste all languages, please)"
+                name: "quote"
                 widget: "object"
                 fields:
-                - {label: "Critic En", name: "en", widget: "string"}
-                - {label: "Critic De", name: "de", widget: "string"}
-                - {label: "Critic Hu", name: "hu", widget: "string"}
+                - {label: "Quote En", name: "en", widget: "string"}
+                - {label: "Quote De", name: "de", widget: "string"}
+                - {label: "Quote Hu", name: "hu", widget: "string"}
               - label: "Source"
                 name: "title"
                 widget: "string"
