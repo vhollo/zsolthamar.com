@@ -75,7 +75,7 @@
     /* background-image: linear-gradient(120deg, #eaee44, #33d0ff); */
     /* background-image: linear-gradient(45deg, var(--dark), transparent); */
 		/* mix-blend-mode: darken; */
-		filter: blur(0px);
+		filter: saturate(0.1);
 		animation: pulse 20s infinite;
 		mix-blend-mode: color;
 	}

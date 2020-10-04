@@ -16,24 +16,20 @@
 	<base target="_blank">
 </svelte:head>
 
-<h1><span lang="en">{post.title.en}</span><span lang="de">{post.title.de}</span><span lang="hu">{post.title.hu}</span></h1>
+<h1><span lang="{$lang}">{post.title[$lang]}</span></h1>
 {#if post.eventdate}
-<date lang="en">{post.eventdate.en}</date>
-<date lang="de">{post.eventdate.de}</date>
-<date lang="hu">{post.eventdate.hu}</date>
+<date lang="{$lang}">{post.eventdate[$lang]}</date>
 {/if}
 {#if post.image && post.image.src}
 <figure>
 	<img src="{post.image.src}" alt="{post.title}"/>
 	{#if post.image.caption}
-	<figcaption><span lang="en">{post.image.caption.en}</span><span lang="de">{post.image.caption.de}</span><span lang="hu">{post.image.caption.hu}</span></figcaption>
+	<figcaption><span lang="{$lang}">{post.image.caption[$lang]}</span></figcaption>
 	{/if}
 </figure>
 {/if}
 
-<div lang="en">{@html post.content.en}</div>
-<div lang="de">{@html post.content.de}</div>
-<div lang="hu">{@html post.content.hu}</div>
+<div lang="{$lang}">{@html post.content[$lang]}</div>
 
 <style>
 	date {

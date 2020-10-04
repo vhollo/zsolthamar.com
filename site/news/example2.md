@@ -1,22 +1,22 @@
 ---
 summary:
-  en: This is another post en
-  de: This is another post de
-  hu: This is another post hu
+  en: This is another event en
+  de: This is another event de
+  hu: This is another event hu
 title:
-  en: Hello World 2 en
-  de: Hello World 2 de
-  hu: Hello World 2 hu
+  en: Event en
+  de: Event de
+  hu: Event hu
 image: 
   src: /uploads/4.jpg
   caption:
-    en: Hello World 1 eng
-    de: Hello World 1 deu
-    hu: Hello World 1 hun
+    en: Hello World eng
+    de: Hello World deu
+    hu: Hello World hun
 content:
-  en: "**BMW** 330i *cabrio*"
-  de: "**BMW** 330i *cabrio*"
-  hu: "**BMW** 330i *cabrio*"
+  en: "English event page 2"
+  de: "German event page 2"
+  hu: "Hungarian event page 2"
 pub_date: 2020-07-08 13:30
 ---
 - this

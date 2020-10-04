@@ -4,7 +4,7 @@ intro:
   de: Intro-de
   hu: Intro-hu
 content:
-  en: "**BMW** 330i *cabrio*"
-  de: "**BMW** 330i *cabrio*"
-  hu: '[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/yYvNfQ2wp0Q/0.jpg)](https://www.youtube.com/watch?v=yYvNfQ2wp0Q)'
+  en: "English about page"
+  de: "German about page"
+  hu: "Hungarian about page"
 ---

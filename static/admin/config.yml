@@ -180,7 +180,7 @@ collections:
       - label: "Critics"
         name: "critics"
         file: "site/pages/critics.md"
-        identifier_field: c.title.en
+        identifier_field: title.en
         fields:
           - label: "Critics"
             label_singular: "Critic"

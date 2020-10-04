@@ -1,5 +1,6 @@
-<script>
+<script context="module">
   import {posts} from '../../news'
+	import { lang } from '../../stores.js'
 </script>
 
 <svelte:head>
@@ -12,13 +13,13 @@
 {#each posts as post}
   <article>
     <a href={`/news/${post.slug}`}>
-      <h3><span lang="en">{post.title.en}</span><span lang="de">{post.title.de}</span><span lang="hu">{post.title.hu}</span></h3>
-			<p><span lang="en">{post.summary.en}</span><span lang="de">{post.summary.de}</span><span lang="hu">{post.summary.hu}</span></p>
-			<date lang="en">{post.eventdate.en}</date><date lang="de">{post.eventdate.de}</date><date lang="hu">{post.eventdate.hu}</date>
+      <h3><span lang="{$lang}">{post.title[$lang]}</span></h3>
+			<p><span lang="{$lang}">{post.summary[$lang]}</span></p>
+			<date lang="{$lang}">{post.eventdate[$lang]}</date>
 			{#if post.image && post.image.src}
 			<figure>
 				<img src="{post.image.src}" alt=""/>
-				<figcaption><span lang="en">{post.image.caption.en}</span><span lang="de">{post.image.caption.de}</span><span lang="hu">{post.image.caption.hu}</span></figcaption>
+				<figcaption><span lang="{$lang}">{post.image.caption[$lang]}</span></figcaption>
 			</figure>
 			{/if}
     </a>

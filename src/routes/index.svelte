@@ -1,5 +1,6 @@
 <script context="module">
 	import { findPost } from '../index'
+	import { lang } from '../stores.js'
 
 	export function preload() {
 		return { post: findPost('landing') }
@@ -7,24 +8,22 @@
 </script>
 <script>
 	export let post
+	//console.log(post)
 </script>
 
 <!-- <svelte:head>
 	<title>{post.slug}</title>
 </svelte:head> -->
 
-<div lang="en">{@html post.content.en}</div>
-<div lang="de">{@html post.content.de}</div>
-<div lang="hu">{@html post.content.hu}</div>
+<div lang="{$lang}">{@html post.content[$lang]}</div>
 
 {#if post.image}
 <figure>
 	<img src="{post.image.src}" alt="{post.title}"/>
 	{#if post.image.caption}
-	<figcaption><em><span lang="en">{post.image.caption.en}</span><span lang="de">{post.image.caption.de}</span><span lang="hu">{post.image.caption.hu}</span></em></figcaption>
+	<figcaption><em><span lang="{$lang}">{post.image.caption[$lang]}</span></em></figcaption>
 	{/if}
 </figure>
-{/if}
 
 <style>
 	figcaption {
@@ -32,3 +31,4 @@
 
 	}
 </style>
+{/if}

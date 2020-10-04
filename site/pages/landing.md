@@ -37,33 +37,6 @@ content:
 
 
     *Zsolt Hamar*
-  hu: >-
-    > *<q>Vannak a léleknek régiói, melyekbe csak a zene világít be.</q>*
-
-    >
-
-    > – Kodály Zoltán
-
-
-    # Köszöntöm a honlapomon!
-
-
-    Ezen az oldalon azt a lenyűgöző varázslatot szeretném megosztani, ahogyan a zene egész életemet gazdaggá tette.
-
-
-    A szüleim gyakran emlegették, hogy egy-két évesen, mielőtt még értelmes szavakat mondtam volna, már Bach D-moll zongoraversenyét tisztán dúdolgatva ringattam magam.
-
-
-    Még most is gyakran úgy érzem, hogy ha a szavak időnként cserben is hagynak, a zene mindig elégedettséggel és boldogsággal tölt. el.
-
-
-    Mióta nem csak komponálok, hanem karmesterként interpretálom is a zenét, örömöm teljes, mivel egyfajta közvetítőként segíthetek a közönségemnek megtapasztalni a zene felemelő és gyógyító erejét.
-
-
-    Őszinte barátsággal:
-
-
-    *Hamar Zsolt*
   de: >-
     > *<q>Einzig das Lied überm Land heiligt und feiert.</q>*
 
@@ -91,5 +64,31 @@ content:
 
 
     *Zsolt Hamar*
+  hu: >-
+    > *<q>Vannak a léleknek régiói, melyekbe csak a zene világít be.</q>*
+
+    >
+
+    > – Kodály Zoltán
+
+
+    # Köszöntöm a honlapomon!
+
+
+    Ezen az oldalon azt a lenyűgöző varázslatot szeretném megosztani, ahogyan a zene egész életemet gazdaggá tette.
+
+
+    A szüleim gyakran emlegették, hogy egy-két évesen, mielőtt még értelmes szavakat mondtam volna, már Bach D-moll zongoraversenyét tisztán dúdolgatva ringattam magam.
+
+    Még most is gyakran úgy érzem, hogy ha a szavak időnként cserben is hagynak, a zene mindig elégedettséggel és boldogsággal tölt. el.
+
+
+    Mióta nem csak komponálok, hanem karmesterként interpretálom is a zenét, örömöm teljes, mivel egyfajta közvetítőként segíthetek a közönségemnek megtapasztalni a zene felemelő és gyógyító erejét.
+
+
+    Őszinte barátsággal
+
+
+    *Hamar Zsolt*
 ---
-<div lang="en">${post.content.en}</div><div lang="de">{post.content.de}</div><div lang="hu">{post.content.hu}</div>
+<div lang="{$lang}">${post.content[$lang]}</div>

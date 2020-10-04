@@ -58,9 +58,9 @@
 		color: var(--txtcolor);
 	}
 
-	blockquote, em {
+	blockquote, em, i {
 		font-family: "SilkSerif-Regular", serif;
-		font-size: 117%;
+		font-size: 130%;
 	}
 
 	body > input { display: none; }

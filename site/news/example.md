@@ -1,17 +1,17 @@
 ---
 summary:
-  en: This is a post eng
-  de: This is a post deu
-  hu: This is a post hun
+  en: This is an event eng
+  de: This is an event deu
+  hu: This is an event hun
 title:
-  en: Event 1
+  en: Event
   de: Veranstaltung
   hu: Esemény
 date: 2020-08-07 00:00
 content:
-  en: "**BMW** 330i *cabrio*"
-  de: "**BMW** 330i *cabrio*"
-  hu: "[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/yYvNfQ2wp0Q/0.jpg)](https://www.youtube.com/watch?v=yYvNfQ2wp0Q)"
+  en: "English event page"
+  de: "German event page"
+  hu: "Hungarian event page"
 pub_date: 2020-07-08 13:29
 ---
 - this
