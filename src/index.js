@@ -12,7 +12,7 @@ const converter = new showdown.Converter({
   //.value()
 
 export function findPost() {
-	console.log(post)
+	//console.log(post)
 	return transform(post)
 }
 
