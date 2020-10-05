@@ -20,9 +20,9 @@ function transform({filename, metadata, html}) {
   const slug = filename.replace(/.md$/, '')
   const date = new Date(metadata.date)
 	const content = {
-		"en": converter.makeHtml(metadata?.content?.en), 
-		"de": converter.makeHtml(metadata?.content?.de), 
-		"hu": converter.makeHtml(metadata?.content?.hu) 
+		"en": converter.makeHtml(metadata.content.en), 
+		"de": converter.makeHtml(metadata.content.de), 
+		"hu": converter.makeHtml(metadata.content.hu) 
 	} 
   return {...metadata, filename, slug, html, date, content}
 }
